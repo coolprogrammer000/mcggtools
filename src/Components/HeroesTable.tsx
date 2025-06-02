@@ -142,7 +142,7 @@ function HeroesTable() {
           {tier[letter as keyof Tier].map((Champ: Heroes) => (
             <img
               key={Champ.name}
-              src={`/Images/Heroes/${Champ.name}.png`}
+              src={`./Images/Heroes/${Champ.name}.png`}
               alt={Champ.name}
               onDragStart={() => {
                 setDrag(Champ);
@@ -183,7 +183,7 @@ function HeroesTable() {
           <div>
             <img
               key={Champ.name}
-              src={`/Images/Heroes/${Champ.name}.png`}
+              src={`./Images/Heroes/${Champ.name}.png`}
               alt={Champ.name}
               onClick={() => handleOnClick(Champ)}
               onDragStart={() => setDrag(Champ)}
