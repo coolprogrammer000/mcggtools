@@ -55,6 +55,7 @@ const Hero: Heroes[] = [
   { name: "Minotaur" },
   { name: "Moskov" },
   { name: "Natan" },
+  { name: "Nolan"},
   { name: "Odette" },
   { name: "Popol & Kupa" },
   { name: "Sun" },
