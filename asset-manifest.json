@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mcggtools/static/css/main.6f051342.css",
+    "main.js": "/mcggtools/static/js/main.9784502b.js",
+    "index.html": "/mcggtools/index.html",
+    "main.6f051342.css.map": "/mcggtools/static/css/main.6f051342.css.map",
+    "main.9784502b.js.map": "/mcggtools/static/js/main.9784502b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f051342.css",
+    "static/js/main.9784502b.js"
+  ]
+}
