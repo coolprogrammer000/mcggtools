@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mcggtools/static/css/main.6f051342.css",
-    "main.js": "/mcggtools/static/js/main.d3cc3e23.js",
+    "main.css": "/mcggtools/static/css/main.80821ac9.css",
+    "main.js": "/mcggtools/static/js/main.3ec91f7a.js",
     "index.html": "/mcggtools/index.html",
-    "main.6f051342.css.map": "/mcggtools/static/css/main.6f051342.css.map",
-    "main.d3cc3e23.js.map": "/mcggtools/static/js/main.d3cc3e23.js.map"
+    "main.80821ac9.css.map": "/mcggtools/static/css/main.80821ac9.css.map",
+    "main.3ec91f7a.js.map": "/mcggtools/static/js/main.3ec91f7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f051342.css",
-    "static/js/main.d3cc3e23.js"
+    "static/css/main.80821ac9.css",
+    "static/js/main.3ec91f7a.js"
   ]
 }
