@@ -55,7 +55,7 @@ const Hero: Heroes[] = [
   { name: "Minotaur" },
   { name: "Moskov" },
   { name: "Natan" },
-  { name: "Nolan"},
+  { name: "Nolan" },
   { name: "Odette" },
   { name: "Popol & Kupa" },
   { name: "Sun" },
@@ -180,9 +180,8 @@ function HeroesTable() {
         className="gallery"
       >
         {filteredHeroes.map((Champ) => (
-          <div>
+          <div key={Champ.name}>
             <img
-              key={Champ.name}
               src={`./Images/Heroes/${Champ.name}.png`}
               alt={Champ.name}
               onClick={() => handleOnClick(Champ)}

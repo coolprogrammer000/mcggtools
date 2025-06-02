@@ -9,6 +9,7 @@ function topRow() {
   const [page, setPage] = useState("default");
   return (
     <div className="Row">
+      <span>Meta Guides</span>
       <span
         onClick={() => {
           setPage("teambuilder");
@@ -30,8 +31,7 @@ function topRow() {
           setPage("patchnotes");
         }}
       >
-        {" "}
-        Patch Notes{" "}
+        <span>Tables</span> Patch Notes{" "}
       </span>
       <span
         onClick={() => {
