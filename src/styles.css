@@ -90,12 +90,14 @@ body {
 .gallery {
   margin-left: 20px;
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
   font-size: 9px;
 }
 /*for HeroesTable.tsx*/
 .gallery div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery div div {
   width: 45px;
   text-wrap: wrap;
   margin-left: 5px;

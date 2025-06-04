@@ -6,6 +6,7 @@ import { useState } from "react";
 }
 interface Heroes {
   name: string;
+  cost: number;
 }
 
 interface Tier {
@@ -16,59 +17,59 @@ interface Tier {
   D: Heroes[];
 }
 const Hero: Heroes[] = [
-  { name: "Akai" },
-  { name: "Aldous" },
-  { name: "Alpha" },
-  { name: "Angela" },
-  { name: "Argus" },
-  { name: "Atlas" },
-  { name: "Aurora" },
-  { name: "Badang" },
-  { name: "Balmond" },
-  { name: "Chang'e" },
-  { name: "Clint" },
-  { name: "Cyclops" },
-  { name: "Diggie" },
-  { name: "Dyrroth" },
-  { name: "Esmeralda" },
-  { name: "Franco" },
-  { name: "Freya" },
-  { name: "Gord" },
-  { name: "Granger" },
-  { name: "Guinevere" },
-  { name: "Gusion" },
-  { name: "Hayabusa" },
-  { name: "Helcurt" },
-  { name: "Hylos" },
-  { name: "Irithel" },
-  { name: "Johnson" },
-  { name: "Kagura" },
-  { name: "Kaja" },
-  { name: "Karina" },
-  { name: "Layla" },
-  { name: "Ling" },
-  { name: "Lolita" },
-  { name: "Lunox" },
-  { name: "Luo Yi" },
-  { name: "Martis" },
-  { name: "Masha" },
-  { name: "Minotaur" },
-  { name: "Moskov" },
-  { name: "Natan" },
-  { name: "Nolan" },
-  { name: "Odette" },
-  { name: "Popol & Kupa" },
-  { name: "Sun" },
-  { name: "Suyou" },
-  { name: "Terizla" },
-  { name: "Thamuz" },
-  { name: "Uranus" },
-  { name: "Vale" },
-  { name: "Vexana" },
-  { name: "Wanwan" },
-  { name: "Yu Zhong" },
-  { name: "Yve" },
-  { name: "Zhask" },
+  { name: "Akai", cost: 2 },
+  { name: "Aldous", cost: 2 },
+  { name: "Alpha", cost: 5 },
+  { name: "Angela", cost: 2 },
+  { name: "Argus", cost: 4 },
+  { name: "Atlas", cost: 1 },
+  { name: "Aurora", cost: 5 },
+  { name: "Badang", cost: 1 },
+  { name: "Balmond", cost: 2 },
+  { name: "Chang'e", cost: 3 },
+  { name: "Clint", cost: 3 },
+  { name: "Cyclops", cost: 1 },
+  { name: "Diggie", cost: 2 },
+  { name: "Dyrroth", cost: 3 },
+  { name: "Esmeralda", cost: 3 },
+  { name: "Franco", cost: 5 },
+  { name: "Freya", cost: 3 },
+  { name: "Gord", cost: 4 },
+  { name: "Granger", cost: 2 },
+  { name: "Guinevere", cost: 4 },
+  { name: "Gusion", cost: 2 },
+  { name: "Hayabusa", cost: 4 },
+  { name: "Helcurt", cost: 1 },
+  { name: "Hylos", cost: 2 },
+  { name: "Irithel", cost: 4 },
+  { name: "Johnson", cost: 3 },
+  { name: "Kagura", cost: 3 },
+  { name: "Kaja", cost: 4 },
+  { name: "Karina", cost: 3 },
+  { name: "Layla", cost: 2 },
+  { name: "Ling", cost: 4 },
+  { name: "Lolita", cost: 1 },
+  { name: "Lunox", cost: 4 },
+  { name: "Luo Yi", cost: 2 },
+  { name: "Martis", cost: 2 },
+  { name: "Masha", cost: 2 },
+  { name: "Minotaur", cost: 5 },
+  { name: "Moskov", cost: 5 },
+  { name: "Natan", cost: 5 },
+  { name: "Nolan", cost: 4 },
+  { name: "Odette", cost: 3 },
+  { name: "Popol & Kupa", cost: 3 },
+  { name: "Sun", cost: 5 },
+  { name: "Suyou", cost: 2 },
+  { name: "Terizla", cost: 4 },
+  { name: "Thamuz", cost: 3 },
+  { name: "Uranus", cost: 3 },
+  { name: "Vale", cost: 1 },
+  { name: "Vexana", cost: 4 },
+  { name: "Wanwan", cost: 1 },
+  { name: "Yu Zhong", cost: 5 },
+  { name: "Yve", cost: 4 },
+  { name: "Zhask", cost: 1 },
 ];
 
 function HeroesTable() {
@@ -179,15 +180,21 @@ function HeroesTable() {
         }}
         className="gallery"
       >
-        {filteredHeroes.map((Champ) => (
-          <div key={Champ.name}>
-            <img
-              src={`./Images/Heroes/${Champ.name}.png`}
-              alt={Champ.name}
-              onClick={() => handleOnClick(Champ)}
-              onDragStart={() => setDrag(Champ)}
-            />
-            <div>{Champ.name}</div>
+        {[1, 2, 3, 4, 5].map((cost) => (
+          <div key={cost}>
+            {filteredHeroes
+              .filter((Champ) => Champ.cost === cost)
+              .map((Champ) => (
+                <div key={Champ.name}>
+                  <img
+                    src={`./Images/Heroes/${Champ.name}.png`}
+                    alt={Champ.name}
+                    onClick={() => handleOnClick(Champ)}
+                    onDragStart={() => setDrag(Champ)}
+                  />
+                  <div>{Champ.name}</div>
+                </div>
+              ))}
           </div>
         ))}
       </div>
