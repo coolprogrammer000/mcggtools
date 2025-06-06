@@ -1,12 +1,7 @@
 import "../styles.css";
 import { useState } from "react";
-
-{
-  /*Building the hero tier list*/
-}
-interface Heroes {
-  name: string;
-}
+import { Heroes, Hero } from "./Types";
+/*Building the hero tier list*/
 
 interface Tier {
   S: Heroes[];
@@ -15,67 +10,13 @@ interface Tier {
   C: Heroes[];
   D: Heroes[];
 }
-const Hero: Heroes[] = [
-  { name: "Akai" },
-  { name: "Aldous" },
-  { name: "Alpha" },
-  { name: "Angela" },
-  { name: "Argus" },
-  { name: "Atlas" },
-  { name: "Aurora" },
-  { name: "Badang" },
-  { name: "Balmond" },
-  { name: "Chang'e" },
-  { name: "Clint" },
-  { name: "Cyclops" },
-  { name: "Diggie" },
-  { name: "Dyrroth" },
-  { name: "Esmeralda" },
-  { name: "Franco" },
-  { name: "Freya" },
-  { name: "Gord" },
-  { name: "Granger" },
-  { name: "Guinevere" },
-  { name: "Gusion" },
-  { name: "Hayabusa" },
-  { name: "Helcurt" },
-  { name: "Hylos" },
-  { name: "Irithel" },
-  { name: "Johnson" },
-  { name: "Kagura" },
-  { name: "Kaja" },
-  { name: "Karina" },
-  { name: "Layla" },
-  { name: "Ling" },
-  { name: "Lolita" },
-  { name: "Lunox" },
-  { name: "Luo Yi" },
-  { name: "Martis" },
-  { name: "Masha" },
-  { name: "Minotaur" },
-  { name: "Moskov" },
-  { name: "Natan" },
-  { name: "Nolan" },
-  { name: "Odette" },
-  { name: "Popol & Kupa" },
-  { name: "Sun" },
-  { name: "Suyou" },
-  { name: "Terizla" },
-  { name: "Thamuz" },
-  { name: "Uranus" },
-  { name: "Vale" },
-  { name: "Vexana" },
-  { name: "Wanwan" },
-  { name: "Yu Zhong" },
-  { name: "Yve" },
-  { name: "Zhask" },
-];
 
 function HeroesTable() {
   const [searchTerm, setSearchTerm] = useState("");
   const [tier, setTier] = useState<Tier>({ S: [], A: [], B: [], C: [], D: [] });
   const [drag, setDrag] = useState<Heroes | null>(null);
   const [current, currentTier] = useState<string | null>(null);
+  const [index, currentIndex] = useState<string | null>(null);
   const assignedChampNames = Object.values(tier)
     .flat()
     .map((champ: Heroes) => champ.name);
@@ -179,15 +120,21 @@ function HeroesTable() {
         }}
         className="gallery"
       >
-        {filteredHeroes.map((Champ) => (
-          <div key={Champ.name}>
-            <img
-              src={`./Images/Heroes/${Champ.name}.png`}
-              alt={Champ.name}
-              onClick={() => handleOnClick(Champ)}
-              onDragStart={() => setDrag(Champ)}
-            />
-            <div>{Champ.name}</div>
+        {[1, 2, 3, 4, 5].map((cost) => (
+          <div key={cost}>
+            {filteredHeroes
+              .filter((Champ) => Champ.cost === cost)
+              .map((Champ) => (
+                <div key={Champ.name}>
+                  <img
+                    src={`./Images/Heroes/${Champ.name}.png`}
+                    alt={Champ.name}
+                    onClick={() => handleOnClick(Champ)}
+                    onDragStart={() => setDrag(Champ)}
+                  />
+                  <div>{Champ.name}</div>
+                </div>
+              ))}
           </div>
         ))}
       </div>

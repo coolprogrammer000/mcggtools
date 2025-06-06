@@ -1,4 +1,4 @@
-function CommandersTable(){
- return <h1>Coming soon</h1>;
+function CommandersTable() {
+  return <h1>Coming son</h1>;
 }
-export default CommandersTable
+export default CommandersTable;

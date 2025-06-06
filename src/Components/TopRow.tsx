@@ -4,48 +4,38 @@ import TeamBuilder from "./TeamBuilder";
 import TierList from "./TierList";
 import PatchNotes from "./PatchNotes";
 import S2Info from "./S2INFO";
+import Tables from "./Tables";
+import MetaGuides from "./MetaGuides";
 
 function topRow() {
   const [page, setPage] = useState("default");
   return (
     <div className="Row">
-      <span>Meta Guides</span>
-      <span
-        onClick={() => {
-          setPage("teambuilder");
-        }}
-      >
-        {" "}
-        Team Builder{" "}
-      </span>
-      <span
-        onClick={() => {
-          setPage("tierlist");
-        }}
-      >
-        {" "}
-        Tier list{" "}
-      </span>
-      <span
-        onClick={() => {
-          setPage("patchnotes");
-        }}
-      >
-        <span>Tables</span> Patch Notes{" "}
-      </span>
-      <span
-        onClick={() => {
-          setPage("s2info");
-        }}
-      >
-        {" "}
-        S2 Info{" "}
-      </span>
+      {[
+        "Meta Guides",
+        "Team Builder",
+        "Tier List",
+        "Tables",
+        "Patch Notes",
+        "S2 Info",
+      ].map((text) => (
+        <span
+          key={text}
+          onClick={() => {
+            setPage(text);
+          }}
+        >
+          {" "}
+          {text}{" "}
+        </span>
+      ))}
       <div>
-        {page === "teambuilder" && <TeamBuilder />}
-        {page === "tierlist" && <TierList />}
-        {page === "patchnotes" && <PatchNotes />}
-        {page === "s2info" && <S2Info />}
+        {page === "Team Builder" && <TeamBuilder />}
+        {page === "Tier List" && <TierList />}
+        {page === "Patch Notes" && <PatchNotes />}
+        {page === "S2 Info" && <S2Info />}
+        {page === "Tables" && <Tables />}
+        {page === "Meta Guides" && <MetaGuides />}
       </div>
     </div>
   );

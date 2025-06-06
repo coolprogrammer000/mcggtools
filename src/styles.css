@@ -35,6 +35,7 @@ body {
   width: 95%;
   margin-left: 2.5%;
   margin-top: 45px;
+  border-collapse: collapse;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
@@ -53,6 +54,7 @@ body {
   text-align: left;
   border-bottom: 2px solid black;
   border-left: 2px solid black;
+  text-wrap: wrap;
 }
 /* for TierList.tsx */
 .Label {
@@ -90,19 +92,33 @@ body {
 .gallery {
   margin-left: 20px;
   margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
   font-size: 9px;
 }
 /*for HeroesTable.tsx*/
 .gallery div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery div div {
   width: 45px;
-  text-wrap: wrap;
   margin-left: 5px;
+  text-wrap: wrap;
 }
 /*for HeroesTable.tsx*/
 img {
   width: 45px;
   margin-left: 5px;
   cursor: pointer;
+}
+
+.TeamBuilderTable {
+  margin-top: 45px;
+  width: 80%;
+  margin-left: 10%;
+  height: 600px;
+  border: 2px solid black;
+}
+
+.TeamBuilderTable tr {
+  vertical-align: top;
 }

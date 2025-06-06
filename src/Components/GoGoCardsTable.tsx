@@ -1,4 +1,5 @@
-function GoGoCardsTable(){
-    return <h1>Coming soon</h1>;
+function GoGoCardsTable() {
+  
+  return <h1>Coming soon</h1>;
 }
-export default GoGoCardsTable
+export default GoGoCardsTable;
