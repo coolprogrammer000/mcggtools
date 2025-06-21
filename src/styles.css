@@ -115,10 +115,34 @@ img {
   margin-top: 45px;
   width: 80%;
   margin-left: 10%;
-  height: 600px;
-  border: 2px solid black;
+  display: flex;
+  font-size: 16px;
 }
 
-.TeamBuilderTable tr {
-  vertical-align: top;
+.TeamBuilderTable table {
+  border: 2px solid black;
+  width: 420px;
+  margin-left: 2px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.Box {
+  border: 2px solid black;
+  width: 60px;
+  height: 60px;
+}
+
+.Fullpage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background: #6a64a4;
+  border: 2px solid black;
 }
