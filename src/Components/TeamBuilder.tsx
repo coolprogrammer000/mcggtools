@@ -6,8 +6,12 @@ import { Heroes, Hero } from "./Types";
 
 function TeamBuilder() {
   const [press, setPress] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const row = Array.from({ length: 3 }, (_, rowIndex) => rowIndex + 1);
   const length = Array.from({ length: 7 }, (_, lengthIndex) => lengthIndex + 1);
+  const filteredHeroes = Hero.filter((champ) =>
+    champ.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <>
       <div className="TeamBuilderTable">
@@ -38,34 +42,48 @@ function TeamBuilder() {
       </div>
       {(press === "Go Go Cards" || press === "Commander") && (
         <div className="Fullpage">
-          <button onClick={() => setPress("")}>Close</button>
-          {press === "Commander" &&
-            Commander.map((Commander: Commanders) => (
-              <img
-                key={Commander.name}
-                src={`./Images/Commanders/${Commander.name}.webp`}
-                alt={Commander.name}
-              />
-            ))}
-          {press === "Go Go Cards" &&
-            Card.map((Card: Cards) => (
-              <img
-                key={Card.name}
-                src={`./Images/Go Go Cards/${Card.name}.png`}
-                alt={Card.name}
-              />
-            ))}
+          <div className="Row">
+            <button onClick={() => setPress("")}>Close</button>
+          </div>
+          <div className="Pagegallery">
+            {press === "Commander" &&
+              Commander.map((Commander: Commanders) => (
+                <img
+                  className="Commander"
+                  key={Commander.name}
+                  src={`./Images/Commanders/${Commander.name}.webp`}
+                  alt={Commander.name}
+                />
+              ))}
+            {press === "Go Go Cards" &&
+              Card.map((Card: Cards) => (
+                <img
+                  className="GoGoCard"
+                  key={Card.name}
+                  src={`./Images/Go Go Cards/${Card.name}.png`}
+                  alt={Card.name}
+                />
+              ))}
+          </div>
         </div>
       )}
-
-      <div>
-        {Hero.map((Hero: Heroes) => (
-          <img
-            key={Hero.name}
-            src={`./Images/Heroes/${Hero.name}.png`}
-            alt={Hero.name}
-          />
-        ))}
+      <input
+        type="text"
+        placeholder="Search heroes..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <div className="gallery">
+        <div>
+          {filteredHeroes.map((Hero: Heroes) => (
+            <img
+              className="Heroes"
+              key={Hero.name}
+              src={`./Images/Heroes/${Hero.name}.png`}
+              alt={Hero.name}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

@@ -30,7 +30,7 @@ body {
   margin-right: 20px;
   cursor: pointer;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Table {
   width: 95%;
   margin-left: 2.5%;
@@ -40,14 +40,12 @@ body {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Table table {
   border-collapse: collapse;
   border-bottom: 2px solid black;
 }
-
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .empty {
   height: 60px;
   width: 100%;
@@ -56,58 +54,155 @@ body {
   border-left: 2px solid black;
   text-wrap: wrap;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Label {
   width: 60px;
   border-bottom: 2px solid black;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Label.S {
   background-color: gold;
   color: black;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Label.A {
   background-color: red;
   color: white;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Label.B {
   background-color: orange;
   color: white;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Label.C {
   background-color: green;
   color: white;
 }
-/* for TierList.tsx */
+/* for all the TierList Tables */
 .Label.D {
   background-color: gray;
   color: white;
   border-bottom: 0px;
 }
-
-/*for HeroesTable.tsx*/
-.gallery {
+/* for HeroesTable.tsx*/
+.HeroesGallery {
   margin-left: 20px;
   margin-top: 20px;
   font-size: 9px;
 }
-/*for HeroesTable.tsx*/
-.gallery div {
+/* for HeroesTable.tsx*/
+.HeroesGallery div {
   display: flex;
   flex-wrap: wrap;
 }
-.gallery div div {
+/* for HeroesTable.tsx*/
+.HeroesGallery div div {
   width: 45px;
-  margin-left: 5px;
   text-wrap: wrap;
-}
-/*for HeroesTable.tsx*/
-img {
-  width: 45px;
+  flex-direction: column;
   margin-left: 5px;
+}
+/* for HeroesTable.tsx*/
+.HeroesGallery div div div {
+  margin-left: 0px;
+}
+/* for HeroesTable.tsx*/
+.Heroes {
+  width: 45px;
+  cursor: pointer;
+}
+/* for HeroesTable.tsx*/
+.Heroes:hover {
+  transform: scale(1.1);
+}
+/* for CommandersTable.tsx*/
+.CommandersGallery {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 9px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* for CommandersTable.tsx*/
+.CommandersGallery div {
+  width: 45px;
+  text-wrap: wrap;
+  flex-direction: column;
+  margin-left: 5px;
+}
+/* for CommandersTable.tsx*/
+.CommandersGallery div div {
+  margin-left: 0px;
+}
+/* for CommandersTable.tsx*/
+.Commander {
+  width: 45px;
+  cursor: pointer;
+}
+/* for CommandersTable.tsx*/
+.Commander:hover {
+  transform: scale(1.1);
+}
+/* for GoGoCardsTable.tsx*/
+.CardsGallery {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 9px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* for GoGoCardsTable.tsx*/
+.CardsGallery div {
+  width: 100px;
+  flex-direction: column;
+  margin-left: 5px;
+}
+/* for GoGoCardsTable.tsx*/
+.CardinTable {
+  width: 60px;
+  cursor: pointer;
+}
+/* for GoGoCardsTable.tsx*/
+.Card {
+  width: 100px;
+  cursor: pointer;
+}
+/* for GoGoCardsTable.tsx*/
+.Card:hover {
+  transform: scale(1.1);
+}
+/* for EquipmentsTable.tsx*/
+.EquipmentsGallery {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* for EquipmentsTable.tsx*/
+.EquipmentsGallery div {
+  width: 45px;
+  text-wrap: wrap;
+  flex-direction: column;
+  margin-left: 5px;
+}
+/* for EquipmentsTable.tsx*/
+.EquipemntsGallery div div {
+  margin-left: 0px;
+}
+/* for EquipmentsTable.tsx*/
+.Equipment {
+  width: 45px;
+  cursor: pointer;
+}
+/* for EquipmentsTable.tsx*/
+.Equipment:hover {
+  transform: scale(1.1);
+}
+
+.GoGoCard {
+  width: 126.9px;
+  height: 195.9px;
   cursor: pointer;
 }
 
@@ -134,15 +229,16 @@ img {
 }
 
 .Fullpage {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 80%;
-  margin-top: 10%;
-  margin-left: 10%;
+  width: 1500px;
+  margin-top: 10px;
+  margin-left: 15%;
   height: 80%;
   display: flex;
   flex-wrap: wrap;
-  background: #6a64a4;
   border: 2px solid black;
+}
+
+.Pagegallery {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -16,7 +16,6 @@ function HeroesTable() {
   const [tier, setTier] = useState<Tier>({ S: [], A: [], B: [], C: [], D: [] });
   const [drag, setDrag] = useState<Heroes | null>(null);
   const [current, currentTier] = useState<string | null>(null);
-  const [index, currentIndex] = useState<string | null>(null);
   const assignedChampNames = Object.values(tier)
     .flat()
     .map((champ: Heroes) => champ.name);
@@ -40,6 +39,7 @@ function HeroesTable() {
         (Champ: Heroes) => Champ.name !== ChampToRemove.name
       ),
     }));
+    setDrag(null);
   };
   const findTier = (Champ: Heroes, tier: Tier) => {
     for (const tierKey in tier) {
@@ -57,39 +57,67 @@ function HeroesTable() {
       handleOnClickRemove(tierFound, Champ);
     }
   };
+
+  const handleOnDropped = (
+    e: React.DragEvent,
+    index: number,
+    letter: string
+  ) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (drag) {
+      handleOnDrop(drag);
+      setTier((prev) => {
+        const newTier = { ...prev };
+        const updatedArray = [...newTier[letter as keyof Tier]];
+        updatedArray.splice(index, 0, drag);
+        newTier[letter as keyof Tier] = updatedArray;
+        return newTier;
+      });
+    }
+  };
+
   const renderRow = (letter: string) => {
     return (
-      <tr>
+      <tr
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={() => {
+          if (current && drag) {
+            handleOnClickRemove(current, drag);
+          }
+          if (drag) {
+            setTier((prev) => {
+              return {
+                ...prev,
+                [letter]: [...prev[letter as keyof Tier], drag],
+              };
+            });
+            currentTier(null);
+            setDrag(null);
+          }
+        }}
+      >
         <td className={`Label ${letter}`}>{letter}</td>
-        <td
-          className="empty"
-          onDragOver={(e) => e.preventDefault()}
-          onDrop={() => {
-            if (drag) {
-              setTier((prev) => {
-                return {
-                  ...prev,
-                  [letter]: [...prev[letter as keyof Tier], drag],
-                };
-              });
-              if (current) {
-                handleOnClickRemove(current, drag);
-              }
-              currentTier(null);
-              setDrag(null);
-            }
-          }}
-        >
-          {tier[letter as keyof Tier].map((Champ: Heroes) => (
+        <td className="empty">
+          {tier[letter as keyof Tier].map((Champ: Heroes, index) => (
             <img
+              className="Heroes"
               key={Champ.name}
               src={`./Images/Heroes/${Champ.name}.png`}
               alt={Champ.name}
+              onDragOver={(e) => {
+                e.preventDefault();
+              }}
               onDragStart={() => {
                 setDrag(Champ);
                 currentTier(letter);
               }}
+              onDrop={(e) => handleOnDropped(e, index, letter)}
               onClick={() => handleOnClickRemove(letter, Champ)}
+              onDragEnd={() => setDrag(null)}
+              style={{
+                opacity: drag === Champ ? 0.5 : 1,
+              }}
             />
           ))}
         </td>
@@ -118,7 +146,7 @@ function HeroesTable() {
             handleOnDrop(drag);
           }
         }}
-        className="gallery"
+        className="HeroesGallery"
       >
         {[1, 2, 3, 4, 5].map((cost) => (
           <div key={cost}>
@@ -127,10 +155,15 @@ function HeroesTable() {
               .map((Champ) => (
                 <div key={Champ.name}>
                   <img
+                    className="Heroes"
                     src={`./Images/Heroes/${Champ.name}.png`}
                     alt={Champ.name}
                     onClick={() => handleOnClick(Champ)}
                     onDragStart={() => setDrag(Champ)}
+                    onDragEnd={() => setDrag(null)}
+                    style={{
+                      opacity: drag === Champ ? 0.5 : 1,
+                    }}
                   />
                   <div>{Champ.name}</div>
                 </div>
