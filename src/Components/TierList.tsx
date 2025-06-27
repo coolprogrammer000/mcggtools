@@ -12,7 +12,7 @@ function TierList() {
   return (
     <>
       <div className="SubRow">
-        {["Commanders", "Heroes", "Equipment", "Go Go Cards"].map((text) => (
+        {["Commanders", "Heroes", "Equipments", "Go Go Cards"].map((text) => (
           <span
             key={text}
             onClick={() => {
@@ -26,7 +26,7 @@ function TierList() {
       <div>
         {type === "Commanders" && <CommandersTable />}
         {type === "Heroes" && <HeroesTable />}
-        {type === "Equipment" && <EquipmentsTable />}
+        {type === "Equipments" && <EquipmentsTable />}
         {type === "Go Go Cards" && <GoGoCardsTable />}
       </div>
     </>

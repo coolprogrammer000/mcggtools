@@ -1,15 +1,16 @@
 import "../styles.css";
 import { useState } from "react";
 import { Commanders, Commander } from "./Types";
-function CommandersTable() {
-  interface Tier {
-    S: Commanders[];
-    A: Commanders[];
-    B: Commanders[];
-    C: Commanders[];
-    D: Commanders[];
-  }
 
+interface Tier {
+  S: Commanders[];
+  A: Commanders[];
+  B: Commanders[];
+  C: Commanders[];
+  D: Commanders[];
+}
+
+function CommandersTable() {
   const [searchTerm, setSearchTerm] = useState("");
   const [tier, setTier] = useState<Tier>({ S: [], A: [], B: [], C: [], D: [] });
   const [drag, setDrag] = useState<Commanders | null>(null);
@@ -143,6 +144,7 @@ function CommandersTable() {
         placeholder="Search commanders..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        
       />
 
       <div

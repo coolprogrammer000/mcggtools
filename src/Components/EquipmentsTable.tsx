@@ -2,20 +2,19 @@ import "../styles.css";
 import { useState } from "react";
 import { Equipments, Equipment } from "./Types";
 
-function EquipmentsTable() {
-  interface Tier {
-    S: Equipments[];
-    A: Equipments[];
-    B: Equipments[];
-    C: Equipments[];
-    D: Equipments[];
-  }
+interface Tier {
+  S: Equipments[];
+  A: Equipments[];
+  B: Equipments[];
+  C: Equipments[];
+  D: Equipments[];
+}
 
+function EquipmentsTable() {
   const [searchTerm, setSearchTerm] = useState("");
   const [tier, setTier] = useState<Tier>({ S: [], A: [], B: [], C: [], D: [] });
   const [drag, setDrag] = useState<Equipments | null>(null);
   const [current, currentTier] = useState<string | null>(null);
-
   const assignedEquipmentNames = Object.values(tier)
     .flat()
     .map((equipment: Equipments) => equipment.name);
@@ -155,19 +154,32 @@ function EquipmentsTable() {
         }}
         className="EquipmentsGallery"
       >
-        {filteredEquipments.map((equipment) => (
-          <div key={equipment.name}>
-            <img
-              className="Equipment"
-              src={`./Images/Equipments/${equipment.name}.png`}
-              alt={equipment.name}
-              onClick={() => handleOnClick(equipment)}
-              onDragStart={() => setDrag(equipment)}
-              onDragEnd={() => setDrag(null)}
-              style={{
-                opacity: drag === equipment ? 0.5 : 1,
-              }}
-            />
+        {[
+          "Physical",
+          "Magic",
+          "Defense",
+          "Starter",
+          "Special",
+          "Magic Crystal",
+        ].map((type) => (
+          <div key={type}>
+            {filteredEquipments
+              .filter((equipment) => equipment.type === type)
+              .map((equipment) => (
+                <div key={equipment.name}>
+                  <img
+                    className="Equipment"
+                    src={`./Images/Equipments/${equipment.name}.png`}
+                    alt={equipment.name}
+                    onClick={() => handleOnClick(equipment)}
+                    onDragStart={() => setDrag(equipment)}
+                    onDragEnd={() => setDrag(null)}
+                    style={{
+                      opacity: drag === equipment ? 0.5 : 1,
+                    }}
+                  />
+                </div>
+              ))}
           </div>
         ))}
       </div>

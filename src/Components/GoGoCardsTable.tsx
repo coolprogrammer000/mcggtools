@@ -2,14 +2,15 @@ import "../styles.css";
 import { useState } from "react";
 import { Cards, Card } from "./Types";
 
+interface Tier {
+  S: Cards[];
+  A: Cards[];
+  B: Cards[];
+  C: Cards[];
+  D: Cards[];
+}
+
 function GoGoCardsTable() {
-  interface Tier {
-    S: Cards[];
-    A: Cards[];
-    B: Cards[];
-    C: Cards[];
-    D: Cards[];
-  }
 
   const [searchTerm, setSearchTerm] = useState("");
   const [tier, setTier] = useState<Tier>({ S: [], A: [], B: [], C: [], D: [] });
