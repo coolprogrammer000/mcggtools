@@ -32,6 +32,8 @@ interface Synergynumber {
 function TeamBuilder() {
   const [press, setPress] = useState("");
   const [drag, setDrag] = useState<Heroes | null>(null);
+  const [Index, setIndex] = useState<number | null>(null);
+  const [SwapHero, setSwapHero] = useState<Heroes | null>(null);
   const [equipmentdrag, setEquipmentDrag] = useState<Equipments | null>(null);
   const [equipmentSearchTerm, setEquipmentSearchTerm] = useState("");
   const [heroSearchTerm, setHeroSearchTerm] = useState("");
@@ -61,7 +63,7 @@ function TeamBuilder() {
   const [boxHero, setBoxHero] = useState<(Heroes | null)[]>(
     Array(21).fill(null)
   );
-  const [synergySelected, setSynergySelected] = useState<Synergies | null>();
+  const [synergySelected, setSynergySelected] = useState<string>("A");
   const [cardSelected, setCardSelected] = useState<string[]>([]);
   const [commanderSelected, setCommanderSelected] = useState<string[]>([]);
   const areAllZero = Object.values(synergyNumber).every((value) => value === 0);
@@ -73,7 +75,13 @@ function TeamBuilder() {
   const filteredEquipments = Equipment.filter((equipment) =>
     equipment.name.toLowerCase().includes(equipmentSearchTerm.toLowerCase())
   );
-  const handleOnClick = () => {};
+
+  const handleOnClick = (hero: Heroes) => {
+    setDrag((prev) => {
+      return hero;
+    });
+    addHerotoTable(boxHero.findIndex((champ) => champ === null));
+  };
   const handleOnClickCard = (card: string) => {
     setCardSelected([...cardSelected, card]);
   };
@@ -91,10 +99,22 @@ function TeamBuilder() {
     setCommanderSelected(updated);
   };
   const addHerotoTable = (index: number) => {
-    const updated = [...boxHero];
-    updated[index] = drag;
-    setBoxHero(updated);
+    setBoxHero((prev) => {
+      const updated = [...prev];
+      updated[index] = drag;
+      return updated;
+    });
   };
+  const swapHeroinTable = (index: number) => {
+    setBoxHero((prev) => {
+      const updated = [...prev];
+      if (Index !== null) {
+        updated[index] = SwapHero;
+      }
+      return updated;
+    });
+  };
+
   const removeHerofromTable = (index: number) => {
     const updated = [...boxHero];
     updated[index] = null;
@@ -190,12 +210,25 @@ function TeamBuilder() {
                         key={lengthIndex}
                         className="Box"
                         onDragStart={() => setDrag(hero)}
-                        onDragOver={(e) => e.preventDefault()}
+                        onDragOver={(e) => {
+                          e.preventDefault();
+                          setIndex(index);
+                          setSwapHero(boxHero[index]);
+                          console.log(Index);
+                        }}
                         onDrop={() => {
                           addHerotoTable(index);
                         }}
                         onDragEnd={() => {
+                          (Index !== index || Index == null) &&
+                            removeHerofromTable(index);
+                          Index !== index &&
+                            Index !== null &&
+                            swapHeroinTable(index);
+                          setIndex(null);
                           setDrag(null);
+                        }}
+                        onClick={() => {
                           removeHerofromTable(index);
                         }}
                       >
@@ -284,7 +317,7 @@ function TeamBuilder() {
         </div>
       )}
       <div className="WholeBox">
-        <div className="HeroBox">
+        <div className="HeroBox " onDragOver={() => setIndex(null)}>
           <div>
             <input
               type="text"
@@ -298,6 +331,11 @@ function TeamBuilder() {
                 key={Synergy.name}
                 src={`./Images/Synergies/${Synergy.name}.png`}
                 alt={Synergy.name}
+                onClick={() => {
+                  synergySelected === Synergy.name
+                    ? setSynergySelected("A")
+                    : setSynergySelected(Synergy.name);
+                }}
               />
             ))}
           </div>
@@ -311,10 +349,24 @@ function TeamBuilder() {
                       className="Heroes"
                       src={`./Images/Heroes/${Champ.name}.png`}
                       alt={Champ.name}
-                      onClick={() => handleOnClick()}
+                      onClick={() => {
+                        setDrag(Champ);
+                        handleOnClick(Champ);
+                      }}
                       onDragStart={() => setDrag(Champ)}
                       onDragEnd={() => {
                         setDrag(null);
+                      }}
+                      style={{
+                        opacity:
+                          synergySelected === "A" ||
+                          Champ.synergy
+                            .split(",")
+                            .some(
+                              (synergy) => synergy.trim() === synergySelected
+                            )
+                            ? 1
+                            : 0.2,
                       }}
                     />
                   </div>
@@ -348,7 +400,6 @@ function TeamBuilder() {
                       className="Equipment"
                       src={`./Images/Equipments/${equipment.name}.png`}
                       alt={equipment.name}
-                      onClick={() => handleOnClick()}
                       onDragStart={() => setEquipmentDrag(equipment)}
                       onDragEnd={() => setEquipmentDrag(null)}
                     />
