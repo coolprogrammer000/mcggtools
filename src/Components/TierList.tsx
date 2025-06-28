@@ -5,50 +5,29 @@ import GoGoCardsTable from "./GoGoCardsTable";
 import EquipmentsTable from "./EquipmentsTable";
 import CommandersTable from "./CommandersTable";
 
-{
-  /*For the tier list row of commanders,heroes... */
-}
+/*For the tier list row of commanders,heroes... */
+
 function TierList() {
   const [type, setType] = useState("heroes");
   return (
     <>
       <div className="SubRow">
-        <span
-          onClick={() => {
-            setType("commanders");
-          }}
-        >
-          Commanders
-        </span>
-        <span
-          onClick={() => {
-            setType("heroes");
-          }}
-        >
-          Heroes
-        </span>
-        <span
-          onClick={() => {
-            setType("equipment");
-          }}
-        >
-          {" "}
-          Equipment
-        </span>
-        <span
-          onClick={() => {
-            setType("gogocards");
-          }}
-        >
-          Go Go Cards
-        </span>
+        {["Commanders", "Heroes", "Equipments", "Go Go Cards"].map((text) => (
+          <span
+            key={text}
+            onClick={() => {
+              setType(text);
+            }}
+          >
+            {text}
+          </span>
+        ))}
       </div>
-
       <div>
-        {type === "commanders" && <CommandersTable />}
-        {type === "heroes" && <HeroesTable />}
-        {type === "equipment" && <EquipmentsTable />}
-        {type === "gogocards" && <GoGoCardsTable />}
+        {type === "Commanders" && <CommandersTable />}
+        {type === "Heroes" && <HeroesTable />}
+        {type === "Equipments" && <EquipmentsTable />}
+        {type === "Go Go Cards" && <GoGoCardsTable />}
       </div>
     </>
   );

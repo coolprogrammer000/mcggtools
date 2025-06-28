@@ -1,13 +1,7 @@
 import "../styles.css";
 import { useState } from "react";
-
-{
-  /*Building the hero tier list*/
-}
-interface Heroes {
-  name: string;
-  cost: number;
-}
+import { Heroes, Hero } from "./Types";
+/*Building the hero tier list*/
 
 interface Tier {
   S: Heroes[];
@@ -16,61 +10,6 @@ interface Tier {
   C: Heroes[];
   D: Heroes[];
 }
-const Hero: Heroes[] = [
-  { name: "Akai", cost: 2 },
-  { name: "Aldous", cost: 2 },
-  { name: "Alpha", cost: 5 },
-  { name: "Angela", cost: 2 },
-  { name: "Argus", cost: 4 },
-  { name: "Atlas", cost: 1 },
-  { name: "Aurora", cost: 5 },
-  { name: "Badang", cost: 1 },
-  { name: "Balmond", cost: 2 },
-  { name: "Chang'e", cost: 3 },
-  { name: "Clint", cost: 3 },
-  { name: "Cyclops", cost: 1 },
-  { name: "Diggie", cost: 2 },
-  { name: "Dyrroth", cost: 3 },
-  { name: "Esmeralda", cost: 3 },
-  { name: "Franco", cost: 5 },
-  { name: "Freya", cost: 3 },
-  { name: "Gord", cost: 4 },
-  { name: "Granger", cost: 2 },
-  { name: "Guinevere", cost: 4 },
-  { name: "Gusion", cost: 2 },
-  { name: "Hayabusa", cost: 4 },
-  { name: "Helcurt", cost: 1 },
-  { name: "Hylos", cost: 2 },
-  { name: "Irithel", cost: 4 },
-  { name: "Johnson", cost: 3 },
-  { name: "Kagura", cost: 3 },
-  { name: "Kaja", cost: 4 },
-  { name: "Karina", cost: 3 },
-  { name: "Layla", cost: 2 },
-  { name: "Ling", cost: 4 },
-  { name: "Lolita", cost: 1 },
-  { name: "Lunox", cost: 4 },
-  { name: "Luo Yi", cost: 2 },
-  { name: "Martis", cost: 2 },
-  { name: "Masha", cost: 2 },
-  { name: "Minotaur", cost: 5 },
-  { name: "Moskov", cost: 5 },
-  { name: "Natan", cost: 5 },
-  { name: "Nolan", cost: 4 },
-  { name: "Odette", cost: 3 },
-  { name: "Popol & Kupa", cost: 3 },
-  { name: "Sun", cost: 5 },
-  { name: "Suyou", cost: 2 },
-  { name: "Terizla", cost: 4 },
-  { name: "Thamuz", cost: 3 },
-  { name: "Uranus", cost: 3 },
-  { name: "Vale", cost: 1 },
-  { name: "Vexana", cost: 4 },
-  { name: "Wanwan", cost: 1 },
-  { name: "Yu Zhong", cost: 5 },
-  { name: "Yve", cost: 4 },
-  { name: "Zhask", cost: 1 },
-];
 
 function HeroesTable() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -100,6 +39,7 @@ function HeroesTable() {
         (Champ: Heroes) => Champ.name !== ChampToRemove.name
       ),
     }));
+    setDrag(null);
   };
   const findTier = (Champ: Heroes, tier: Tier) => {
     for (const tierKey in tier) {
@@ -117,39 +57,67 @@ function HeroesTable() {
       handleOnClickRemove(tierFound, Champ);
     }
   };
+
+  const handleOnDropped = (
+    e: React.DragEvent,
+    index: number,
+    letter: string
+  ) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (drag) {
+      handleOnDrop(drag);
+      setTier((prev) => {
+        const newTier = { ...prev };
+        const updatedArray = [...newTier[letter as keyof Tier]];
+        updatedArray.splice(index, 0, drag);
+        newTier[letter as keyof Tier] = updatedArray;
+        return newTier;
+      });
+    }
+  };
+
   const renderRow = (letter: string) => {
     return (
-      <tr>
+      <tr
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={() => {
+          if (current && drag) {
+            handleOnClickRemove(current, drag);
+          }
+          if (drag) {
+            setTier((prev) => {
+              return {
+                ...prev,
+                [letter]: [...prev[letter as keyof Tier], drag],
+              };
+            });
+            currentTier(null);
+            setDrag(null);
+          }
+        }}
+      >
         <td className={`Label ${letter}`}>{letter}</td>
-        <td
-          className="empty"
-          onDragOver={(e) => e.preventDefault()}
-          onDrop={() => {
-            if (drag) {
-              setTier((prev) => {
-                return {
-                  ...prev,
-                  [letter]: [...prev[letter as keyof Tier], drag],
-                };
-              });
-              if (current) {
-                handleOnClickRemove(current, drag);
-              }
-              currentTier(null);
-              setDrag(null);
-            }
-          }}
-        >
-          {tier[letter as keyof Tier].map((Champ: Heroes) => (
+        <td className="empty">
+          {tier[letter as keyof Tier].map((Champ: Heroes, index) => (
             <img
+              className="Heroes"
               key={Champ.name}
               src={`./Images/Heroes/${Champ.name}.png`}
               alt={Champ.name}
+              onDragOver={(e) => {
+                e.preventDefault();
+              }}
               onDragStart={() => {
                 setDrag(Champ);
                 currentTier(letter);
               }}
+              onDrop={(e) => handleOnDropped(e, index, letter)}
               onClick={() => handleOnClickRemove(letter, Champ)}
+              onDragEnd={() => setDrag(null)}
+              style={{
+                opacity: drag === Champ ? 0.5 : 1,
+              }}
             />
           ))}
         </td>
@@ -178,7 +146,7 @@ function HeroesTable() {
             handleOnDrop(drag);
           }
         }}
-        className="gallery"
+        className="HeroesGallery"
       >
         {[1, 2, 3, 4, 5].map((cost) => (
           <div key={cost}>
@@ -187,10 +155,15 @@ function HeroesTable() {
               .map((Champ) => (
                 <div key={Champ.name}>
                   <img
+                    className="Heroes"
                     src={`./Images/Heroes/${Champ.name}.png`}
                     alt={Champ.name}
                     onClick={() => handleOnClick(Champ)}
                     onDragStart={() => setDrag(Champ)}
+                    onDragEnd={() => setDrag(null)}
+                    style={{
+                      opacity: drag === Champ ? 0.5 : 1,
+                    }}
                   />
                   <div>{Champ.name}</div>
                 </div>
