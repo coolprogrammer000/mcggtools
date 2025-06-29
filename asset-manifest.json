@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.abb9c9e6.css",
-    "main.js": "/static/js/main.7b036577.js",
-    "index.html": "/index.html",
-    "main.abb9c9e6.css.map": "/static/css/main.abb9c9e6.css.map",
-    "main.7b036577.js.map": "/static/js/main.7b036577.js.map"
+    "main.css": "/mcggtools/static/css/main.abb9c9e6.css",
+    "main.js": "/mcggtools/static/js/main.7b036577.js",
+    "index.html": "/mcggtools/index.html",
+    "main.abb9c9e6.css.map": "/mcggtools/static/css/main.abb9c9e6.css.map",
+    "main.7b036577.js.map": "/mcggtools/static/js/main.7b036577.js.map"
   },
   "entrypoints": [
     "static/css/main.abb9c9e6.css",
