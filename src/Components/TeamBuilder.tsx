@@ -283,7 +283,7 @@ function TeamBuilder() {
       </div>
       {(press === "Go Go Cards" || press === "Commander") && (
         <div className="Fullpage">
-          <div className="Row">
+          <div className="CloseButton">
             <button onClick={() => setPress("")}>Close</button>
           </div>
           <div className="Pagegallery">

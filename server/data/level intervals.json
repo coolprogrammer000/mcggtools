@@ -1,0 +1,82 @@
+{
+  "3": {
+    "xp": 7,
+    "odds": [65, 30, 5, 0, 0],
+    "guinevere": {
+      "expected": 0.364,
+      "cost_per_roll": 1.636,
+      "prem_client_one": 0.936,
+      "prem_client_two": 0.676
+    }
+  },
+  "4": {
+    "xp": 8,
+    "odds": [55, 35, 10, 0, 0],
+    "guinevere": {
+      "expected": 0.403,
+      "cost_per_roll": 1.597,
+      "prem_client_one": 0.897,
+      "prem_client_two": 0.637
+    }
+  },
+  "5": {
+    "xp": 20,
+    "odds": [39, 40, 20, 1, 0],
+    "guinevere": {
+      "expected": 0.4758,
+      "cost_per_roll": 1.5242,
+      "prem_client_one": 0.8242,
+      "prem_client_two": 0.5642
+    }
+  },
+  "6": {
+    "xp": 32,
+    "odds": [30, 35, 30, 5, 0],
+    "guinevere": {
+      "expected": 0.546,
+      "cost_per_roll": 1.454,
+      "prem_client_one": 0.754,
+      "prem_client_two": 0.494
+    }
+  },
+  "7": {
+    "xp": 40,
+    "odds": [19, 30, 40, 10, 1],
+    "guinevere": {
+      "expected": 0.6344,
+      "cost_per_roll": 1.3656,
+      "prem_client_one": 0.6656,
+      "prem_client_two": 0.4056
+    }
+  },
+  "8": {
+    "xp": 52,
+    "odds": [16, 25, 35, 18, 5],
+    "guinevere": {
+      "expected": 0.702,
+      "cost_per_roll": 1.298,
+      "prem_client_one": 0.598,
+      "prem_client_two": 0.338
+    }
+  },
+  "9": {
+    "xp": 74,
+    "odds": [13, 20, 25, 30, 12],
+    "guinevere": {
+      "expected": 0.8008,
+      "cost_per_roll": 1.1992,
+      "prem_client_one": 0.4992,
+      "prem_client_two": 0.2392
+    }
+  },
+  "10": {
+    "xp": null,
+    "odds": [6, 12, 22, 35, 25],
+    "guinevere": {
+      "expected": 0.9386,
+      "cost_per_roll": 1.0614,
+      "prem_client_one": 0.3614,
+      "prem_client_two": 0.1014
+    }
+  }
+}
