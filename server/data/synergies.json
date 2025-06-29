@@ -1,0 +1,378 @@
+[
+    {
+        "id": "synergy_bruiser",
+        "name": "Bruiser",
+        "description": "When Bruisers perform a Basic ATK, there’s a 20% chance that their next Basic ATK will launch faster with 165% DMG. The enhanced Basic ATKs have a chance to launch an extra one.",
+        "tiers": {
+            "2": {
+                "1": 20,
+                "2": 165
+            },
+            "4": {
+                "1": 40,
+                "2": 165
+            },
+            "6": {
+                "1": 60,
+                "2": 165
+            }
+        }
+    },
+    {
+        "id": "synergy_support",
+        "name": "Support",
+        "description": "5s after the battle begins, all allies gain 600 Shield.",
+        "tiers": {
+            "2": {
+                "1": 600
+            },
+            "3": {
+                "1": 1200
+            }
+        }
+    },
+    {
+        "id": "synergy_defender",
+        "name": "Defender",
+        "description": "All allies gain 6 Hybrid DEF. Defenders gain extra 20 Hybrid DEF, with this bonus doubled in the first 20s.",
+        "tiers": {
+            "2": {
+                "1": 6,
+                "2": 20
+            },
+            "4": {
+                "1": 12,
+                "2": 30
+            },
+            "6": {
+                "1": 24,
+                "2": 60
+            }
+        }
+    },
+    {
+        "id": "synergy_dauntless",
+        "name": "Dauntless",
+        "description": "All allies gain 5% Shield. Dauntless Heroes gain extra 25% Shield.",
+        "tiers": {
+            "2": {
+                "1": 5,
+                "2": 25
+            },
+            "4": {
+                "1": 10,
+                "2": 50
+            },
+            "6": {
+                "1": 20,
+                "2": 100
+            }
+        }
+    },
+    {
+        "id": "synergy_weapon_master",
+        "name": "Weapon Master",
+        "description": "All allies gain 5% Hybrid Lifesteal. Weapon Masters gain extra 10% Hybrid Lifesteal and extra 50% Physical ATK when their HP drops below 70%.",
+        "tiers": {
+            "2": {
+                "1": 5,
+                "2": 10,
+                "3": 50
+            },
+            "4": {
+                "1": 10,
+                "2": 20,
+                "3": 100
+            },
+            "6": {
+                "1": 15,
+                "2": 30,
+                "3": 150
+            }
+        }
+    },
+    {
+        "id": "synergy_swordsman",
+        "name": "Swordsman",
+        "description": "All allies gain 6% Hybrid ATK. Swordsmen gain extra 5% Hybrid ATK each time they deal DMG, stacking up to 8 time(s).",
+        "tiers": {
+            "2": {
+                "1": 6,
+                "2": 5
+            },
+            "4": {
+                "1": 12,
+                "2": 9
+            },
+            "6": {
+                "1": 24,
+                "2": 14
+            }
+        }
+    },
+    {
+        "id": "synergy_marksman",
+        "name": "Marksman",
+        "description": "All allies gain 5% ATK Speed. Marksmen's Basic ATKs reduce target's Physical DEF by 6, up to 6 stacks.",
+        "tiers": {
+            "2": {
+                "1": 5,
+                "2": 6,
+                "3": 6
+            },
+            "4": {
+                "1": 10,
+                "2": 8,
+                "3": 7
+            },
+            "6": {
+                "1": 15,
+                "2": 12,
+                "3": 8
+            }
+        }
+    },
+    {
+        "id": "synergy_summoner",
+        "name": "Summoner",
+        "description": "When battle starts, gain a random Summoner. (This may include 3-Star Summoners you've already upgraded.)",
+        "tiers": {
+            "2": {
+                "1": "Get 1 Summoner(s)."
+            },
+            "4": {
+                "1": "Increase the chance of acquiring high-cost Heroes, and grant 3 Gold."
+            }
+        }
+    },
+    {
+        "id": "synergy_stargazer",
+        "name": "Stargazer",
+        "description": "All allies recover 2 Mana per second. Stargazers recover extra 6 Mana per second.",
+        "tiers": {
+            "2": {
+                "1": 2,
+                "2": 6
+            },
+            "4": {
+                "1": 4,
+                "2": 12
+            },
+            "6": {
+                "1": 8,
+                "2": 18
+            }
+        }
+    },
+    {
+        "id": "synergy_doomsworn",
+        "name": "Doomsworn",
+        "description": "Summon a 1-star Hanabi to join the battle. Hanabi can wear Equipment.",
+        "tiers": {
+            "2": {
+                "1": 1
+            },
+            "4": {
+                "1": 2
+            },
+            "6": {
+                "1": 3
+            },
+            "10": {
+                "1": 4
+            }
+        }
+    },
+    {
+        "id": "synergy_northern_vale",
+        "name": "Northern Vale",
+        "description": "Northern Vale Heroes apply a Winter Mark when dealing DMG to enemies. Every 6 Winter Marks will detonate and deal 260 True DMG.",
+        "tiers": {
+            "2": {
+                "1": 260
+            },
+            "4": {
+                "1": 800
+            },
+            "6": {
+                "1": 1650
+            },
+            "10": {
+                "1": 2400,
+                "2": "Rain continuous frost on enemies. The frost deals 2400 True DMG and stacks winter marks."
+            }
+        }
+    },
+    {
+        "id": "synergy_dragon_altar",
+        "name": "Dragon Altar",
+        "description": "Generate 4 special tiles on the battlefield. Heroes on these tiles gain 8% DMG Increase and 8 Hybrid DEF, with Dragon Altar Heroes receiving 3 times the bonus.",
+        "tiers": {
+            "2": {
+                "1": 4,
+                "2": 8,
+                "3": 8
+            },
+            "4": {
+                "1": 6,
+                "2": 12,
+                "3": 12
+            },
+            "6": {
+                "1": 21,
+                "2": 18,
+                "3": 18
+            },
+            "10": {
+                "1": 21,
+                "2": 40,
+                "3": 40,
+                "4": "Additionally, a dragon descends at the start of battle, dealing True DMG equal to 50% of enemies' HP and stunning them for 3s."
+            }
+        }
+    },
+    {
+        "id": "synergy_emberlord",
+        "name": "Emberlord",
+        "description": "When an Emberlord Hero dies, 20% of their HP and 30% of their Hybrid ATK will be evenly shared among surviving Emberlord Heroes.",
+        "tiers": {
+            "2": {
+                "1": 20,
+                "2": 30
+            },
+            "4": {
+                "1": 20,
+                "2": 50
+            },
+            "6": {
+                "1": 20,
+                "2": 70
+            },
+            "10": {
+                "1": 30,
+                "2": 120,
+                "3": "When an Emberlord Hero dies, they will resurrect and restore 30% HP."
+            }
+        }
+    },
+    {
+        "id": "synergy_astropower",
+        "name": "Astro Power",
+        "description": "Astro Power Heroes gain 10% DMG Increase. The Astro Power Hero with the most Equipment becomes the Astro Sovereign and gains an additional 20% DMG Increase and 5% Hybrid Lifesteal.",
+        "tiers": {
+            "2": {
+                "1": 10,
+                "2": 20,
+                "3": 5
+            },
+            "4": {
+                "1": 20,
+                "2": 45,
+                "3": 10
+            },
+            "6": {
+                "1": 30,
+                "2": 85,
+                "3": 20
+            },
+            "10": {
+                "1": 100,
+                "2": 250,
+                "3": 40,
+                "4": "Create an additional Astro Sovereign, and Astro Soverigns gain an additional 25% Max HP."
+            }
+        }
+    },
+    {
+        "id": "synergy_eruditio",
+        "name": "Eruditio",
+        "description": "Get a vault that can be opened once per match. Accumulate Knowledge Points based on battle results and open the vault to receive a piece of exclusive Eruditio Equipment that provides 0% DMG increase and rewards based on the Points. Gain 1 Point(s) for win, 2 Point(s) for defeat.",
+        "tiers": {
+            "2": {
+                "1": 1,
+                "2": 2,
+                "3": 0
+            },
+            "4": {
+                "1": 2,
+                "2": 4,
+                "3": 30
+            },
+            "6": {
+                "1": 4,
+                "2": 8,
+                "3": 80,
+                "4": "Recover 2 commander HP each round."
+            },
+            "10": {
+                "1": 8,
+                "2": 16,
+                "3": 200,
+                "4": "Recover 2 commander HP each round. Instantly receive 99 Knowledge Points."
+            }
+        }
+    },
+    {
+        "id": "synergy_dawnbringer",
+        "name": "Dawnbringer",
+        "description": "Obtain exclusive Dawnbringer Equipment that can grow stronger.",
+        "tiers": {
+            "2": {
+                "1": "Obtain 1 piece(s) of Dawnbringer Equipment."
+            },
+            "4": {
+                "1": "Obtain 1 additional piece(s) of Dawnbringer Equipment, each with 6 growth(s)."
+            },
+            "6": {
+                "1": "Obtain 1 more piece(s) of Dawnbringer Equipment, each with 12 growth(s)."
+            },
+            "10": {
+                "1": "Obtain an additional Supreme Crown. All Dawnbringer Equipment gains 24 growth(s)."
+            }
+        }
+    },
+    {
+        "id": "synergy_shadeweaver",
+        "name": "Shadeweaver",
+        "description": "When battle starts, a fierce wind sweeps across the battlefield from the last tile of each column containing a Shadeweaver Hero, granting 30% ATK Speed to allies and knocking enemies airborne for 1s.",
+        "tiers": {
+            "2": {
+                "1": 30,
+                "2": 1
+            },
+            "4": {
+                "1": 60,
+                "2": 1
+            }
+        }
+    },
+    {
+        "id": "synergy_faeborn",
+        "name": "Faeborn",
+        "description": "Faeborn Heroes use vines to protect Heroes with Blessing effect, granting them 30% extra DMG and reducing DMG taken by 10%.",
+        "tiers": {
+            "2": {
+                "1": 30,
+                "2": 10
+            },
+            "3": {
+                "1": 50,
+                "2": 15,
+                "3": "Another Synergy of the Hero with Blessing effect also gains a Blessing (Synergy Count +1)."
+            }
+        }
+    },
+    {
+        "id": "synergy_exorcist",
+        "name": "Exorcist",
+        "description": "Obtain Exorcist's Seal. When an Exorcist Hero dies, they transform into the Hero carrying the Exorcist's Seal, inherit all HP, and cast their skill once before disappearing.",
+        "tiers": {
+            "2": {
+                "1": "Obtain Exorcist's Seal (Basic). When an Exorcist Hero dies, they deal 80%/90%/110% Skill DMG of the Hero they transformed into based on their own Star level."
+            },
+            "4": {
+                "1": "Obtain Exorcist's Seal (Advanced). When an Exorcist Hero dies, they deal 90%/100%/120% Skill DMG of the Hero they transformed into based on their own Star level."
+            }
+        }
+    }
+]
