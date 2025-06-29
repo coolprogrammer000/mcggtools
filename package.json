@@ -1,5 +1,4 @@
 {
-  
   "name": "react-typescript",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
@@ -31,7 +30,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "concurrently -k \"npm run --prefix server dev\" \"react-scripts start\"",
-    "build": "react-scripts build && npm --prefix server build"
+    "build": "react-scripts build && npm run --prefix server build",
+    "dev_build": "react-scripts build && serve -s build"
   },
   "browserslist": [
     ">0.2%",
