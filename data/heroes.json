@@ -1,0 +1,2734 @@
+[
+  {
+    "name": "Dyrroth",
+    "cost": 3,
+    "faction": "Doomsworn",
+    "role": [
+      "Bruiser"
+    ],
+    "skill": {
+      "name": "Spectre Step",
+      "description": "Dyrroth deals (+275% Total Physical ATK) Physical DMG to the target and restores (+190% Total Physical ATK) HP.\nPassive: After every 3 Basic ATK(s), Dyrroth's next Basic ATK releases a Circle Strike that deals (+150% Total Physical ATK) DMG.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 275,
+          "passive_bonus": 150,
+          "restore_bonus": 190
+        },
+        "star_2": {
+          "physical_bonus": 275,
+          "passive_bonus": 150,
+          "restore_bonus": 220
+        },
+        "star_3": {
+          "physical_bonus": 390,
+          "passive_bonus": 150,
+          "restore_bonus": 370
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2576,
+        "physical_atk": 145,
+        "magic_atk": 145,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 4637,
+        "physical_atk": 220,
+        "magic_atk": 220,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 8810,
+        "physical_atk": 325,
+        "magic_atk": 325,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Hylos",
+    "cost": 2,
+    "faction": "Doomsworn",
+    "role": [
+      "Defender"
+    ],
+    "skill": {
+      "name": "Law and Order",
+      "description": "Hylos deals (+260% Total Magic ATK) Magic DMG to the target and gains a Shield for 3s.\nPassive: When battle starts, grants a 150 Shield to himself and adjacent allies.",
+      "scaling": {
+        "star_1": {
+          "shield": 150,
+          "magic_bonus": 260
+        },
+        "star_2": {
+          "shield": 250,
+          "magic_bonus": 270
+        },
+        "star_3": {
+          "shield": 500,
+          "magic_bonus": 350
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2233,
+        "physical_atk": 115,
+        "magic_atk": 115,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 4019,
+        "physical_atk": 175,
+        "magic_atk": 175,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 7235,
+        "physical_atk": 260,
+        "magic_atk": 260,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Franco",
+    "cost": 5,
+    "faction": "Doomsworn",
+    "role": [
+      "Dauntless"
+    ],
+    "skill": {
+      "name": "Bloody Hunt",
+      "description": "Franco launches an iron hook towards the furthest enemy, dealing (+120% Total Physical ATK) Physical DMG and dragging them back.\nHe then deals (+100% Total Physical ATK) Physical DMG 6 times to surrounding enemies.",
+      "scaling": {
+        "star_1": {
+          "hook_bonus": 120,
+          "aoe_bonus": 100
+        },
+        "star_2": {
+          "hook_bonus": 125,
+          "aoe_bonus": 110
+        },
+        "star_3": {
+          "hook_bonus": 500,
+          "aoe_bonus": 450
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 4372,
+        "physical_atk": 240,
+        "magic_atk": 240,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 7869,
+        "physical_atk": 360,
+        "magic_atk": 360,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 24045,
+        "physical_atk": 540,
+        "magic_atk": 540,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Argus",
+    "cost": 4,
+    "faction": "Doomsworn",
+    "role": [
+      "Weapon Master"
+    ],
+    "skill": {
+      "name": "Warmonger",
+      "description": "Enhances Argus' next Basic ATK to launch a Demonic Slash, dealing (+170% Total Physical ATK) Physical DMG twice.\nPassive: On taking fatal damage for the first time, Argus becomes Fallen Angel, gains 40% ATK Speed for 3s and is immune to death for 1\u202fs.",
+      "scaling": {
+        "star_1": {
+          "atk_speed_boost": 40,
+          "physical_bonus": 170,
+          "death_immunity_duration": 1.0
+        },
+        "star_2": {
+          "atk_speed_boost": 60,
+          "physical_bonus": 170,
+          "death_immunity_duration": 1.6
+        },
+        "star_3": {
+          "atk_speed_boost": 140,
+          "physical_bonus": 420,
+          "death_immunity_duration": 2.2
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3496,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 6293,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 12935,
+        "physical_atk": 405,
+        "magic_atk": 405,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Irithel",
+    "cost": 4,
+    "faction": "Doomsworn",
+    "role": [
+      "Marksman"
+    ],
+    "skill": {
+      "name": "Strafe",
+      "description": "Irithel launches flaming arrows, dealing (+135% Total Physical ATK) Physical DMG and empowering the next 3 Basic ATKs.\nEnhanced Basic ATKs deal (+320% Total Physical ATK) Physical DMG.\nPassive: Each Basic ATK deals 3 hits of (+35% Total Physical ATK) Physical DMG.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 135,
+          "basic_atk_dmg": 320
+        },
+        "star_2": {
+          "physical_bonus": 135,
+          "basic_atk_dmg": 320
+        },
+        "star_3": {
+          "physical_bonus": 400,
+          "basic_atk_dmg": 765
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3100,
+        "physical_atk": 165,
+        "magic_atk": 165,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 5580,
+        "physical_atk": 250,
+        "magic_atk": 250,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 11470,
+        "physical_atk": 370,
+        "magic_atk": 370,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Cyclops",
+    "cost": 1,
+    "faction": "Doomsworn",
+    "role": [
+      "Stargazer"
+    ],
+    "skill": {
+      "name": "Planets Attack",
+      "description": "Cyclops summons 5 starlit spheres that orbit him, each dealing (+140% Total Magic ATK) Magic DMG to nearby enemies.\nPassive: Grants 10% Hybrid ATK to two allied Heroes within 1 tile.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 140
+        },
+        "star_2": {
+          "magic_bonus": 140
+        },
+        "star_3": {
+          "magic_bonus": 180
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1550,
+        "physical_atk": 80,
+        "magic_atk": 80,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 2790,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 5022,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Popol and Kupa",
+    "cost": 3,
+    "faction": "Northern Vale",
+    "role": [
+      "Summoner"
+    ],
+    "skill": {
+      "name": "I Need You, Kupa!",
+      "description": "Popol prays intently to call Kupa to the battlefield, who will leave in 4s.\nAfter 3 consecutive attacks, Kupa unleashes 3 rapid blows, each dealing (+135% Total Physical ATK) Physical DMG.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 135
+        },
+        "star_2": {
+          "physical_bonus": 155
+        },
+        "star_3": {
+          "physical_bonus": 260
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2170,
+        "physical_atk": 130,
+        "magic_atk": 130,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3906,
+        "physical_atk": 195,
+        "magic_atk": 195,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 7421,
+        "physical_atk": 295,
+        "magic_atk": 295,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Freya",
+    "cost": 3,
+    "faction": "Northern Vale",
+    "role": [
+      "Weapon Master"
+    ],
+    "skill": {
+      "name": "Valkyrie",
+      "description": "Freya enters the Valkyrie state, gaining 35% Physical ATK, 30% ATK Speed, and a 700 shield. Meanwhile, her Basic ATKs deal 25% Splash DMG.",
+      "scaling": {
+        "star_1": {
+          "atk_bonus": 35,
+          "atk_speed_bonus": 30,
+          "shield": 700
+        },
+        "star_2": {
+          "atk_bonus": 35,
+          "atk_speed_bonus": 40,
+          "shield": 1000
+        },
+        "star_3": {
+          "atk_bonus": 50,
+          "atk_speed_bonus": 50,
+          "shield": 2500
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2705,
+        "physical_atk": 145,
+        "magic_atk": 145,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 4869,
+        "physical_atk": 220,
+        "magic_atk": 220,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 9250,
+        "physical_atk": 325,
+        "magic_atk": 325,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Masha",
+    "cost": 2,
+    "faction": "Northern Vale",
+    "role": [
+      "Bruiser"
+    ],
+    "skill": {
+      "name": "Wild Power",
+      "description": "Masha increases the DMG for the next 8 Basic ATKs to 150%, gaining 85% extra ATK Speed and 10% Hybrid Lifesteal.",
+      "scaling": {
+        "star_1": {
+          "basic_atk_dmg": 150,
+          "atk_speed_boost": 85,
+          "lifesteal": 10
+        },
+        "star_2": {
+          "basic_atk_dmg": 150,
+          "atk_speed_boost": 85,
+          "lifesteal": 10
+        },
+        "star_3": {
+          "basic_atk_dmg": 180,
+          "atk_speed_boost": 165,
+          "lifesteal": 20
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2024,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3643,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 6558,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Atlas",
+    "cost": 1,
+    "faction": "Northern Vale",
+    "role": [
+      "Defender"
+    ],
+    "skill": {
+      "name": "Annihilate",
+      "description": "Passive: Atlas generates Frigid Breath around him. Enemies in the area will have their ATK Speed reduced by 1% every 0.5s (up to 5%).",
+      "scaling": {
+        "star_1": {
+          "atk_speed_reduction": 1
+        },
+        "star_2": {
+          "atk_speed_reduction": 2
+        },
+        "star_3": {
+          "atk_speed_reduction": 4
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2440,
+        "physical_atk": 110,
+        "magic_atk": 110,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 0,
+        "mana_cap": 0
+      },
+      "star_2": {
+        "hp": 4612,
+        "physical_atk": 165,
+        "magic_atk": 165,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 0,
+        "mana_cap": 0
+      },
+      "star_3": {
+        "hp": 10962,
+        "physical_atk": 250,
+        "magic_atk": 250,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 0,
+        "mana_cap": 0
+      }
+    }
+  },
+  {
+    "name": "Aurora",
+    "cost": 5,
+    "faction": "Northern Vale",
+    "role": [
+      "Mage"
+    ],
+    "skill": {
+      "name": "Hailstone Blast",
+      "description": "Aurora summons an icy meteorite to strike at the location with the most enemies, dealing Magic DMG 6 times within medium range.\nWhen reaching 3-Star, she summons a freezing wind that deals high Magic DMG to all enemies.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 95
+        },
+        "star_2": {
+          "magic_bonus": 100
+        },
+        "star_3": {
+          "magic_bonus": 225
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3565,
+        "physical_atk": 175,
+        "magic_atk": 175,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 6417,
+        "physical_atk": 265,
+        "magic_atk": 265,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 19608,
+        "physical_atk": 395,
+        "magic_atk": 395,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Yve",
+    "cost": 4,
+    "faction": "Northern Vale",
+    "role": [
+      "Stargazer"
+    ],
+    "skill": {
+      "name": "Void Blast",
+      "description": "Yve channels Galactic Energy, dealing Magic DMG to the target, then detonates this energy, dealing Magic DMG to enemies on adjacent tiles.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 435,
+          "extra_magic_atk": 225
+        },
+        "star_2": {
+          "magic_bonus": 435,
+          "extra_magic_atk": 225
+        },
+        "star_3": {
+          "magic_bonus": 1050,
+          "extra_magic_atk": 475
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3100,
+        "physical_atk": 130,
+        "magic_atk": 130,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 35,
+        "mana_cap": 35
+      },
+      "star_2": {
+        "hp": 5580,
+        "physical_atk": 195,
+        "magic_atk": 195,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 35,
+        "mana_cap": 35
+      },
+      "star_3": {
+        "hp": 11470,
+        "physical_atk": 295,
+        "magic_atk": 295,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 35,
+        "mana_cap": 35
+      }
+    }
+  },
+  {
+    "name": "Akai",
+    "cost": 2,
+    "faction": "Dragon Altar",
+    "role": [
+      "Defender"
+    ],
+    "skill": {
+      "name": "Body Slam",
+      "description": "Akai slams the ground, dealing (+260% Total Physical ATK) Physical DMG to adjacent enemies while gaining a Shield equal to a flat value + % of Max HP.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 260,
+          "shield": 240,
+          "shield_bonus": 5
+        },
+        "star_2": {
+          "physical_bonus": 260,
+          "shield": 350,
+          "shield_bonus": 5
+        },
+        "star_3": {
+          "physical_bonus": 350,
+          "shield": 800,
+          "shield_bonus": 9
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2121,
+        "physical_atk": 115,
+        "magic_atk": 115,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3818,
+        "physical_atk": 175,
+        "magic_atk": 175,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 6873,
+        "physical_atk": 260,
+        "magic_atk": 260,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Ling",
+    "cost": 4,
+    "faction": "Dragon Altar",
+    "role": [
+      "Swordsman"
+    ],
+    "skill": {
+      "name": "Tempest of Blades",
+      "description": "Ling soars skyward, becoming invincible. Upon landing, deals (+290% Total Physical ATK) DMG to enemies within medium range.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 290
+        },
+        "star_2": {
+          "physical_bonus": 290
+        },
+        "star_3": {
+          "physical_bonus": 750
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3496,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 100,
+        "mana_cap": 125
+      },
+      "star_2": {
+        "hp": 6293,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 100,
+        "mana_cap": 125
+      },
+      "star_3": {
+        "hp": 12935,
+        "physical_atk": 405,
+        "magic_atk": 405,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 100,
+        "mana_cap": 125
+      }
+    }
+  },
+  {
+    "name": "Suyou",
+    "cost": 2,
+    "faction": "Dragon Altar",
+    "role": [
+      "Weapon Master"
+    ],
+    "skill": {
+      "name": "Soul Sever",
+      "description": "Suyou deals (+300% Total Physical ATK) Physical DMG to enemies in a fan-shaped area in front of him.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 300
+        },
+        "star_2": {
+          "physical_bonus": 300
+        },
+        "star_3": {
+          "physical_bonus": 400
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2024,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3643,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 6558,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Wanwan",
+    "cost": 1,
+    "faction": "Dragon Altar",
+    "role": ["Marksman"],
+    "skill": {
+      "name": "Tiger Pace",
+      "description": "Enemy Heroes hit by Wanwan’s ATKs 3 times will have their weaknesses exposed. Wanwan’s Basic ATKs deal an extra (+65% Total Physical ATK) DMG. \nPassive: enemies with exposed weakness become Vulnerable, taking 10% extra DMG.",
+      "scaling": {
+        "star_1": { "physical_bonus": 65 },
+        "star_2": { "physical_bonus": 70 },
+        "star_3": { "physical_bonus": 100 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1550, "physical_atk": 100, "magic_atk": 100,
+        "atk_speed": 0.8, "atk_range": 4,
+        "initial_mana": 0, "mana_cap": 0
+      },
+      "star_2": {
+        "hp": 2790, "physical_atk": 150, "magic_atk": 150,
+        "atk_speed": 0.8, "atk_range": 4,
+        "initial_mana": 0, "mana_cap": 0
+      },
+      "star_3": {
+        "hp": 5022, "physical_atk": 225, "magic_atk": 225,
+        "atk_speed": 0.8, "atk_range": 4,
+        "initial_mana": 0, "mana_cap": 0
+      }
+    }
+  },
+  {
+    "name": "Sun",
+    "cost": 5,
+    "faction": "Dragon Altar",
+    "role": ["Summoner"],
+    "skill": {
+      "name": "Clone Techniques",
+      "description": "Upon first skill cast, Sun summons 2 clones that take 75% extra DMG. (Magic Crystals are ineffective on Doppelgangers, and a maximum of 2 Doppelgangers can exist at the same time.)\nIn subsequent casts, Sun and the Doppelgangers strike forward with their staves, dealing (+180% Total Physical ATK) Physical DMG to enemies within 3 tiles along the path.",
+      "scaling": {
+        "star_1": { "extra_dmg_taken": 75, "physical_bonus": 180 },
+        "star_2": { "extra_dmg_taken": 70, "physical_bonus": 200 },
+        "star_3": { "extra_dmg_taken": 50, "physical_bonus": 1100 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3441, "physical_atk": 250, "magic_atk": 250,
+        "atk_speed": 0.75, "atk_range": 1,
+        "initial_mana": 25, "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 6193, "physical_atk": 375, "magic_atk": 375,
+        "atk_speed": 0.75, "atk_range": 1,
+        "initial_mana": 25, "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 18924, "physical_atk": 620, "magic_atk": 620,
+        "atk_speed": 0.75, "atk_range": 1,
+        "initial_mana": 25, "mana_cap": 25
+      }
+    }
+  },
+  {
+    "name": "Chang'e",
+    "cost": 3,
+    "faction": "Dragon Altar",
+    "role": ["Stargazer"],
+    "skill": {
+      "name": "Starmoon Shockwave",
+      "description": "Chang'e sends 5 energy spheres toward the target, each dealing (+155% Total Magic ATK) Magic DMG. The spheres will spread out when they hit the target and continue to fly, dealing damage to enemies behind the target.",
+      "scaling": {
+        "star_1": { "magic_bonus": 155 },
+        "star_2": { "magic_bonus": 155 },
+        "star_3": { "magic_bonus": 220 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2170, "physical_atk": 105, "magic_atk": 105,
+        "atk_speed": 0.75, "atk_range": 4,
+        "initial_mana": 50, "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3906, "physical_atk": 160, "magic_atk": 160,
+        "atk_speed": 0.75, "atk_range": 4,
+        "initial_mana": 50, "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 7421, "physical_atk": 235, "magic_atk": 235,
+        "atk_speed": 0.75, "atk_range": 4,
+        "initial_mana": 50, "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Badang",
+    "cost": 1,
+    "faction": "Emberlord",
+    "role": [
+      "Bruiser"
+    ],
+    "skill": {
+      "name": "Chivalry Fist",
+      "description": "Badang’s every 4 Basic ATK(s) will enhance the next Basic ATK to deal (+420% Total Physical ATK) Physical DMG and gain a 100 Shield.\nPassive: When battle starts, Badang grants 6 Hybrid DEF to himself and the allied Heroes to his left and right.",
+      "scaling": {
+        "star_1": {
+          "shield": 100,
+          "shield_bonus": 5,
+          "physical_bonus": 420
+        },
+        "star_2": {
+          "shield": 200,
+          "shield_bonus": 5,
+          "physical_bonus": 450
+        },
+        "star_3": {
+          "shield": 450,
+          "shield_bonus": 9,
+          "physical_bonus": 550
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1840,
+        "physical_atk": 110,
+        "magic_atk": 110,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 0,
+        "mana_cap": 0
+      },
+      "star_2": {
+        "hp": 3312,
+        "physical_atk": 165,
+        "magic_atk": 165,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 0,
+        "mana_cap": 0
+      },
+      "star_3": {
+        "hp": 5962,
+        "physical_atk": 250,
+        "magic_atk": 250,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 0,
+        "mana_cap": 0
+      }
+    }
+  },
+  {
+    "name": "Kaja",
+    "cost": 4,
+    "faction": "Emberlord",
+    "role": [
+      "Defender",
+      "Support"
+    ],
+    "skill": {
+      "name": "Ring of Order",
+      "description": "Kaja releases a Ringed Electric Blade that quickly expands and contracts, dealing (+130% Total Magic ATK) Magic DMG to enemies hit and restoring (+25% Total Magic ATK) HP to himself.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 130,
+          "heal_bonus": 25
+        },
+        "star_2": {
+          "magic_bonus": 135,
+          "heal_bonus": 35
+        },
+        "star_3": {
+          "magic_bonus": 375,
+          "heal_bonus": 65
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3706,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 2,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 6670,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 2,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 13700,
+        "physical_atk": 405,
+        "magic_atk": 405,
+        "atk_speed": 0.75,
+        "atk_range": 2,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Balmond",
+    "cost": 2,
+    "faction": "Emberlord",
+    "role": [
+      "Dauntless"
+    ],
+    "skill": {
+      "name": "Cyclone Sweep",
+      "description": "Balmond launches 14 strikes within 3 s, each dealing (+45% Total Physical ATK) Physical DMG to adjacent enemies and reducing their healing received by 30 %.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 45
+        },
+        "star_2": {
+          "physical_bonus": 55
+        },
+        "star_3": {
+          "physical_bonus": 70
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2145,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3862,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 6951,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Thamuz",
+    "cost": 3,
+    "faction": "Emberlord",
+    "role": [
+      "Weapon Master"
+    ],
+    "skill": {
+      "name": "Molten Scythes",
+      "description": "Thamuz throws War Scythe toward the current target direction and recalls it, dealing (+230% Total Physical ATK) Physical DMG to enemies hit in the 3 front tile(s) and stunning them for 0.6 s.",
+      "scaling": {
+        "star_1": {
+          "stun_duration": 0.6,
+          "physical_bonus": 230
+        },
+        "star_2": {
+          "stun_duration": 1.0,
+          "physical_bonus": 240
+        },
+        "star_3": {
+          "stun_duration": 2.2,
+          "physical_bonus": 330
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2576,
+        "physical_atk": 145,
+        "magic_atk": 145,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 4637,
+        "physical_atk": 220,
+        "magic_atk": 220,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 8810,
+        "physical_atk": 325,
+        "magic_atk": 325,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Moskov",
+    "cost": 5,
+    "faction": "Emberlord",
+    "role": [
+      "Marksman"
+    ],
+    "skill": {
+      "name": "Spear of Destruction",
+      "description": "Moskov throws Spear of Destruction toward the location with the most enemies. The spear deals (+285% Total Physical ATK) Physical DMG to enemies in its path, and Moskov’s ATK Speed is increased by 20 % for 6 s.",
+      "scaling": {
+        "star_1": {
+          "atk_speed_bonus": 20,
+          "physical_bonus": 285
+        },
+        "star_2": {
+          "atk_speed_bonus": 25,
+          "physical_bonus": 300
+        },
+        "star_3": {
+          "atk_speed_bonus": 40,
+          "physical_bonus": 1320
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3565,
+        "physical_atk": 210,
+        "magic_atk": 210,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 6417,
+        "physical_atk": 315,
+        "magic_atk": 315,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 19608,
+        "physical_atk": 475,
+        "magic_atk": 475,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Gord",
+    "cost": 4,
+    "faction": "Emberlord",
+    "role": [
+      "Mage"
+    ],
+    "skill": {
+      "name": "Mystic Gush",
+      "description": "Gord continuously unleashes an energy beam in a designated direction, dealing (+170% Total Magic ATK) Magic DMG 12 time(s) to enemies in its path. (If no target can be attacked, casting immediately ends and refunds some Mana.)",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 170
+        },
+        "star_2": {
+          "magic_bonus": 170
+        },
+        "star_3": {
+          "magic_bonus": 360
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3100,
+        "physical_atk": 130,
+        "magic_atk": 130,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 5580,
+        "physical_atk": 195,
+        "magic_atk": 195,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 11470,
+        "physical_atk": 295,
+        "magic_atk": 295,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Minotaur",
+    "cost": 5,
+    "faction": "Astro Power",
+    "role": [
+      "Defender"
+    ],
+    "skill": {
+      "name": "Minoan Fury",
+      "description": "Minotaur hammers the ground 3 times, sending shockwaves that deal (+90%Total Physical ATK) Physical DMG to enemies within a large area and reduces their Movement Speed by 70% for 2s for the first two strikes. The final shockwave deals (+180%Total Physical ATK) Physical DMG and knocks targets airborne for 0.5s. Minotaur is immune to CC while casting this skill. For 5s after casting this skill, Minotaur will recover 2% HP when he takes damage.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 90,
+          "total_physical_bonus": 180,
+          "restore_percentage": 2
+        },
+        "star_2": {
+          "physical_bonus": 100,
+          "total_physical_bonus": 200,
+          "restore_percentage": 2
+        },
+        "star_3": {
+          "physical_bonus": 340,
+          "total_physical_bonus": 675,
+          "restore_percentage": 5
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 4476,
+        "physical_atk": 230,
+        "magic_atk": 230,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 100,
+        "mana_cap": 125
+      },
+      "star_2": {
+        "hp": 8057,
+        "physical_atk": 345,
+        "magic_atk": 345,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 100,
+        "mana_cap": 125
+      },
+      "star_3": {
+        "hp": 24619,
+        "physical_atk": 520,
+        "magic_atk": 520,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 125
+      }
+    }
+  },
+  {
+    "name": "Martis",
+    "cost": 2,
+    "faction": "Astro Power",
+    "role": [
+      "Weapon Master"
+    ],
+    "skill": {
+      "name": "Decimation",
+      "description": "Martis deals (+270%Total Physical ATK) Physical DMG to the target and gains a Shield equal to 10% of his Max HP for 3s. Passive: When casting the skill for the first time, grants the entire lineup 10% ATK Speed for 6s.",
+      "scaling": {
+        "star_1": {
+          "shield": 10,
+          "physical_bonus": 270
+        },
+        "star_2": {
+          "shield": 10,
+          "physical_bonus": 270
+        },
+        "star_3": {
+          "shield": 15,
+          "physical_bonus": 320
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2024,
+        "physical_atk": 125,
+        "magic_atk": 125,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3643,
+        "physical_atk": 190,
+        "magic_atk": 190,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 6558,
+        "physical_atk": 280,
+        "magic_atk": 280,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Karina",
+    "cost": 3,
+    "faction": "Astro Power",
+    "role": [
+      "Swordsman"
+    ],
+    "skill": {
+      "name": "Elusiveness",
+      "description": "Upon first skill cast, Karina dashes to the enemy Hero with the highest damage output within 3 tiles (prioritizes ranged Heroes) and enters the Elusiveness state for 2s, during which she is immune to 5 Basic ATKs received. Passive: After attacking a target twice in a row, Karina's third attack deals an extra (+250%Total Magic ATK) Magic DMG to the target.",
+      "scaling": {
+        "star_1": {
+          "duration": 2,
+          "basic_atk_times": 5,
+          "magic_bonus": 250
+        },
+        "star_2": {
+          "duration": 4,
+          "basic_atk_times": 6,
+          "magic_bonus": 250
+        },
+        "star_3": {
+          "duration": 6,
+          "basic_atk_times": 8,
+          "magic_bonus": 390
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2576,
+        "physical_atk": 145,
+        "magic_atk": 145,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 4637,
+        "physical_atk": 220,
+        "magic_atk": 220,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 8810,
+        "physical_atk": 325,
+        "magic_atk": 325,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+    {
+    "name": "Zhask",
+    "cost": 1,
+    "faction": "Astro Power",
+    "role": ["Summoner"],
+    "skill": {
+      "name": "Nightmaric Spawn",
+      "description": "Zhask summons a Nightmaric Spawn next to him that will automatically attack nearby enemies, dealing (+130% Total Magic ATK) Magic DMG with each attack. These attacks also reduce the target's Magic DEF by 6, stacking up to 4 times.",
+      "scaling": {
+        "star_1": { "magic_bonus": 130 },
+        "star_2": { "magic_bonus": 130 },
+        "star_3": { "magic_bonus": 200 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1550,
+        "physical_atk": 80,
+        "magic_atk": 80,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 100,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 2790,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 100,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 5022,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 100,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Odette",
+    "cost": 3,
+    "faction": "Astro Power",
+    "role": ["Mage"],
+    "skill": {
+      "name": "Blue Nova",
+      "description": "Odette releases a set of magic energy balls that deal (+500% Total Magic ATK) Magic DMG to the target enemy and one nearby enemy when hit, immobilizing them for 0.8s.",
+      "scaling": {
+        "star_1": { "magic_bonus": 500 },
+        "star_2": { "magic_bonus": 575 },
+        "star_3": { "magic_bonus": 850 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2170,
+        "physical_atk": 105,
+        "magic_atk": 105,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3906,
+        "physical_atk": 160,
+        "magic_atk": 160,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 7421,
+        "physical_atk": 235,
+        "magic_atk": 235,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Lunox",
+    "cost": 4,
+    "faction": "Astro Power",
+    "role": ["Stargazer"],
+    "skill": {
+      "name": "Power of Chaos: Darkening",
+      "description": "Lunox dashes to a safe location and releases 3 Chaos Assaults, each dealing (+270% Total Magic ATK) Magic DMG. Killing an enemy Hero grants 1 additional cast of Chaos Assault.",
+      "scaling": {
+        "star_1": { "magic_bonus": 270 },
+        "star_2": { "magic_bonus": 270 },
+        "star_3": { "magic_bonus": 540 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3100,
+        "physical_atk": 130,
+        "magic_atk": 130,
+        "atk_speed": 0.75,
+        "atk_range": 3,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 5580,
+        "physical_atk": 195,
+        "magic_atk": 195,
+        "atk_speed": 0.75,
+        "atk_range": 3,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 11470,
+        "physical_atk": 295,
+        "magic_atk": 295,
+        "atk_speed": 0.75,
+        "atk_range": 3,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Johnson",
+    "cost": 3,
+    "faction": "Eruditio",
+    "role": ["Defender"],
+    "skill": {
+      "name": "Impact Wrench",
+      "description": "Johnson throws his Impact Wrench at his current target, dealing (+560% Total Magic ATK) Magic DMG and gaining a Shield equal to 25% of Max HP that lasts 4s.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 560,
+          "shield_percent": 25
+        },
+        "star_2": {
+          "magic_bonus": 560,
+          "shield_percent": 25
+        },
+        "star_3": {
+          "magic_bonus": 790,
+          "shield_percent": 30
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3069,
+        "physical_atk": 135,
+        "magic_atk": 135,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 5525,
+        "physical_atk": 205,
+        "magic_atk": 205,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 10497,
+        "physical_atk": 305,
+        "magic_atk": 305,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Diggie",
+    "cost": 2,
+    "faction": "Eruditio",
+    "role": ["Support"],
+    "skill": {
+      "name": "Auto Alarm Bomb",
+      "description": "Diggie throws an owl alarm clock at the current target, dealing (+300% Total Magic ATK) Magic DMG to enemies on adjacent tiles and reducing their Magic DEF by 12.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 300,
+          "magic_def_reduction": 12
+        },
+        "star_2": {
+          "magic_bonus": 300,
+          "magic_def_reduction": 24
+        },
+        "star_3": {
+          "magic_bonus": 390,
+          "magic_def_reduction": 36
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1705,
+        "physical_atk": 90,
+        "magic_atk": 90,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3069,
+        "physical_atk": 135,
+        "magic_atk": 135,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 5524,
+        "physical_atk": 205,
+        "magic_atk": 205,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Lolita",
+    "cost": 1,
+    "faction": "Eruditio",
+    "role": ["Dauntless"],
+    "skill": {
+      "name": "Noumenon Energy Core",
+      "description": "Lolita grants herself and two allied Heroes a 320 Shield that lasts 3s.",
+      "scaling": {
+        "star_1": {
+          "shield": 320
+        },
+        "star_2": {
+          "shield": 580
+        },
+        "star_3": {
+          "shield": 1500
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1929,
+        "physical_atk": 105,
+        "magic_atk": 105,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3471,
+        "physical_atk": 160,
+        "magic_atk": 160,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 6248,
+        "physical_atk": 235,
+        "magic_atk": 235,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Nolan",
+    "cost": 4,
+    "faction": "Eruditio",
+    "role": ["Swordsman"],
+    "skill": {
+      "name": "Fracture",
+      "description": "Nolan dashes to the farthest enemy within nearby 3 tiles, leaving a Rift and dealing (+220% Total Physical ATK) Physical DMG. After a short delay, the Rift activates and deals (+220% Total Physical ATK) Physical DMG, then Nolan moves to a nearby tile.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 220
+        },
+        "star_2": {
+          "physical_bonus": 220
+        },
+        "star_3": {
+          "physical_bonus": 600
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3496,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 60,
+        "mana_cap": 60
+      },
+      "star_2": {
+        "hp": 6293,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 60,
+        "mana_cap": 60
+      },
+      "star_3": {
+        "hp": 12935,
+        "physical_atk": 405,
+        "magic_atk": 405,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 60,
+        "mana_cap": 60
+      }
+    }
+  },
+  {
+    "name": "Layla",
+    "cost": 2,
+    "faction": "Eruditio",
+    "role": ["Marksman"],
+    "skill": {
+      "name": "Void Projectile",
+      "description": "Layla fires an orb of Malefic Energy at the target, dealing (+180% Total Physical ATK) Physical DMG to the target and stunning them for 0.5s. Passive: When the battle begins, increase the Physical ATK of herself and the allies to her right and left by 15%.",
+      "scaling": {
+        "star_1": {
+          "stun_duration": 0.5,
+          "physical_bonus": 180
+        },
+        "star_2": {
+          "stun_duration": 1.0,
+          "physical_bonus": 200
+        },
+        "star_3": {
+          "stun_duration": 1.5,
+          "physical_bonus": 400
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1705,
+        "physical_atk": 110,
+        "magic_atk": 110,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3069,
+        "physical_atk": 165,
+        "magic_atk": 165,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 5524,
+        "physical_atk": 250,
+        "magic_atk": 250,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Natan",
+    "cost": 5,
+    "faction": "Eruditio",
+    "role": ["Stargazer"],
+    "skill": {
+      "name": "Superposition",
+      "description": "Natan launches a projectile with Basic ATK, dealing (+90% Total Magic ATK) Magic DMG to enemies in its path. The projectiles will return after Natan casts the skill, increasing 10% all DMG dealt to enemies by him.",
+      "scaling": {
+        "star_1": {
+          "extra_dmg": 10,
+          "magic_bonus": 90
+        },
+        "star_2": {
+          "extra_dmg": 20,
+          "magic_bonus": 100
+        },
+        "star_3": {
+          "extra_dmg": 220,
+          "magic_bonus": 120
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3565,
+        "physical_atk": 235,
+        "magic_atk": 235,
+        "atk_speed": 0.8,
+        "atk_range": 6,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 6417,
+        "physical_atk": 350,
+        "magic_atk": 350,
+        "atk_speed": 0.8,
+        "atk_range": 6,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 19608,
+        "physical_atk": 530,
+        "magic_atk": 530,
+        "atk_speed": 0.8,
+        "atk_range": 6,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Aldous",
+    "cost": 2,
+    "faction": "Dawnbringer",
+    "role": ["Bruiser"],
+    "skill": {
+      "name": "Contract: Transform",
+      "description": "Aldous unleashes his inner energy to enhance his next Basic ATK, dealing (+340% Total Physical ATK) Physical DMG to the target and gaining (+100% Total Physical ATK) Shield.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 340,
+          "shield_bonus": 100
+        },
+        "star_2": {
+          "physical_bonus": 350,
+          "shield_bonus": 130
+        },
+        "star_3": {
+          "physical_bonus": 530,
+          "shield_bonus": 200
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2024,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3643,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 6558,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Terizla",
+    "cost": 4,
+    "faction": "Dawnbringer",
+    "role": ["Defender"],
+    "skill": {
+      "name": "Penalty Zone",
+      "description": "Terizla leaps up and slams down forcefully, dealing (+240% Total Physical ATK) Physical DMG to adjacent enemies and knocking them Airborne for 0.6s, while gaining a Shield equal to 16% of his Max HP for 4s.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 240,
+          "shield_percentage": 16
+        },
+        "star_2": {
+          "physical_bonus": 240,
+          "shield_percentage": 18
+        },
+        "star_3": {
+          "physical_bonus": 690,
+          "shield_percentage": 30
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3496,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 6293,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 12935,
+        "physical_atk": 405,
+        "magic_atk": 405,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Uranus",
+    "cost": 3,
+    "faction": "Dawnbringer",
+    "role": ["Dauntless"],
+    "skill": {
+      "name": "Ionic Edge",
+      "description": "Uranus releases two energy blades that orbit around himself, dealing (+250% Total Magic ATK) Magic DMG to enemies while gaining 60 Hybrid DEF for 4s.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 250,
+          "hybrid_def": 60
+        },
+        "star_2": {
+          "magic_bonus": 250,
+          "hybrid_def": 60
+        },
+        "star_3": {
+          "magic_bonus": 340,
+          "hybrid_def": 75
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2842,
+        "physical_atk": 135,
+        "magic_atk": 135,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 5116,
+        "physical_atk": 205,
+        "magic_atk": 205,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 9720,
+        "physical_atk": 305,
+        "magic_atk": 305,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Gusion",
+    "cost": 2,
+    "faction": "Dawnbringer",
+    "role": [
+      "Swordsman"
+    ],
+    "skill": {
+      "name": "Shadowblade Slaughter",
+      "description": "Gusion throws daggers forward, each dealing (+50% Total Magic ATK) Magic DMG to the target hit. Then he recalls the daggers, dealing the same Magic DMG.\nPassive: Dealing DMG reduces the target's Hybrid DEF by 6.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 50
+        },
+        "star_2": {
+          "magic_bonus": 60
+        },
+        "star_3": {
+          "magic_bonus": 80
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2024,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3643,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 6558,
+        "physical_atk": 270,
+        "magic_atk": 270,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Vexana",
+    "cost": 4,
+    "faction": "Dawnbringer",
+    "role": [
+      "Summoner"
+    ],
+    "skill": {
+      "name": "Eternal Guard",
+      "description": "Vexana summons the Eternal Guard to ravage the battlefield, dealing (+315% Total Magic ATK) Magic DMG to enemies within medium range and knocking them airborne for 0.6s. The Eternal Guard's Basic ATKs deal (+175% Total Magic ATK) Magic DMG.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 315,
+          "summon_bonus": 175
+        },
+        "star_2": {
+          "magic_bonus": 315,
+          "summon_bonus": 175
+        },
+        "star_3": {
+          "magic_bonus": 750,
+          "summon_bonus": 420
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3100,
+        "physical_atk": 130,
+        "magic_atk": 130,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 100,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 5580,
+        "physical_atk": 195,
+        "magic_atk": 195,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 100,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 11470,
+        "physical_atk": 295,
+        "magic_atk": 295,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 100,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Vale",
+    "cost": 1,
+    "faction": "Dawnbringer",
+    "role": [
+      "Mage"
+    ],
+    "skill": {
+      "name": "Wind Blade",
+      "description": "Vale unleashes 2 wind blades towards the left and right of a target area, dealing (+300% Total Magic ATK) Magic DMG to enemies hit.\nAt the start of battle, Vale grants 10 Mana to himself and his left and right allies.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 300
+        },
+        "star_2": {
+          "magic_bonus": 300
+        },
+        "star_3": {
+          "magic_bonus": 430
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1550,
+        "physical_atk": 80,
+        "magic_atk": 80,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 2790,
+        "physical_atk": 120,
+        "magic_atk": 120,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 5022,
+        "physical_atk": 180,
+        "magic_atk": 180,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+   {
+    "name": "Alpha",
+    "cost": 5,
+    "faction": "Shadeweaver",
+    "role": ["Weapon Master"],
+    "skill": {
+      "name": "Force Swing",
+      "description": "Alpha unleashes 2 sweeping slashes in a fan-shaped area in the front, dealing (+120% Total Physical ATK) Physical DMG to enemies. From the third cast onward, additionally releases 3 linear energy waves forward at different angles, each dealing (+85% Total Physical ATK) Physical DMG.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 120,
+          "bonus_wave": 85
+        },
+        "star_2": {
+          "physical_bonus": 130,
+          "bonus_wave": 85
+        },
+        "star_3": {
+          "physical_bonus": 530,
+          "bonus_wave": 370
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3846,
+        "physical_atk": 240,
+        "magic_atk": 240,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 6922,
+        "physical_atk": 360,
+        "magic_atk": 360,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 21151,
+        "physical_atk": 540,
+        "magic_atk": 540,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Helcurt",
+    "cost": 1,
+    "faction": "Shadeweaver",
+    "role": ["Swordsman"],
+    "skill": {
+      "name": "Deadly Stinger",
+      "description": "Helcurt blinks to the enemy Hero with the highest damage output within 3 tiles (prioritizes ranged Heroes) upon first skill cast, and then fires 5 Deadly Stinger(s) forward, each dealing (+110% Total Physical ATK) Physical DMG to enemies. Passive: Upon death, Helcurt spreads a curse, increasing damage taken by adjacent enemies by 15% for the next 8s.",
+      "scaling": {
+        "star_1": {
+          "extra_dmg": 15,
+          "physical_bonus": 110
+        },
+        "star_2": {
+          "extra_dmg": 20,
+          "physical_bonus": 110
+        },
+        "star_3": {
+          "extra_dmg": 30,
+          "physical_bonus": 150
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1840,
+        "physical_atk": 110,
+        "magic_atk": 110,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3312,
+        "physical_atk": 165,
+        "magic_atk": 165,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 5962,
+        "physical_atk": 250,
+        "magic_atk": 250,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Clint",
+    "cost": 3,
+    "faction": "Shadeweaver",
+    "role": ["Marksman"],
+    "skill": {
+      "name": "Grenade Bombardment",
+      "description": "Clint launches a grenade in the target direction that explodes on the first enemy hit, dealing (+300% Total Physical ATK) Physical DMG.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 300
+        },
+        "star_2": {
+          "physical_bonus": 310
+        },
+        "star_3": {
+          "physical_bonus": 420
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2170,
+        "physical_atk": 160,
+        "magic_atk": 160,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 25
+      },
+      "star_2": {
+        "hp": 3906,
+        "physical_atk": 240,
+        "magic_atk": 240,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 25
+      },
+      "star_3": {
+        "hp": 7421,
+        "physical_atk": 360,
+        "magic_atk": 360,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 25
+      }
+    }
+  },
+  {
+    "name": "Luo Yi",
+    "cost": 2,
+    "faction": "Shadeweaver",
+    "role": ["Stargazer"],
+    "skill": {
+      "name": "Dispersion",
+      "description": "Luo Yi releases the skill in the target direction, dealing (+540% Total Magic ATK) Magic DMG to the first enemy hit and those behind them in a fan-shaped area.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 540
+        },
+        "star_2": {
+          "magic_bonus": 540
+        },
+        "star_3": {
+          "magic_bonus": 670
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1705,
+        "physical_atk": 90,
+        "magic_atk": 90,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 3069,
+        "physical_atk": 135,
+        "magic_atk": 135,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 5524,
+        "physical_atk": 205,
+        "magic_atk": 205,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Guinevere",
+    "cost": 4,
+    "faction": "Faeborn",
+    "role": ["Bruiser"],
+    "skill": {
+      "name": "Super Magic",
+      "description": "Guinevere launches an enhanced Basic ATK, dealing (+420% Total Magic ATK) Magic DMG to the target and recovering (+110% Total Magic ATK) HP.",
+      "scaling": {
+        "star_1": {
+          "magic_bonus": 420,
+          "magic_restore": 110
+        },
+        "star_2": {
+          "magic_bonus": 420,
+          "magic_restore": 130
+        },
+        "star_3": {
+          "magic_bonus": 1100,
+          "magic_restore": 200
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3496,
+        "physical_atk": 190,
+        "magic_atk": 190,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 6293,
+        "physical_atk": 285,
+        "magic_atk": 285,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 12935,
+        "physical_atk": 430,
+        "magic_atk": 430,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Esmeralda",
+    "cost": 3,
+    "faction": "Faeborn",
+    "role": ["Dauntless", "Support"],
+    "skill": {
+      "name": "Stardust Dance",
+      "description": "Esmeralda deals (+170% Total Physical ATK) Physical DMG and (+170% Total Magic ATK) Magic DMG to surrounding enemies. Passive: When dealing DMG, Esmeralda grants enemy Heroes a Shield equal to 100% of DMG dealt and gradually steals their Shield. Her basic ATK deals (+50% Total Physical ATK) and (+50% Total Magic ATK). Esmeralda's DMG ignores all shield effects.",
+      "scaling": {
+        "star_1": {
+          "physical_bonus": 170,
+          "magic_bonus": 170
+        },
+        "star_2": {
+          "physical_bonus": 170,
+          "magic_bonus": 170
+        },
+        "star_3": {
+          "physical_bonus": 235,
+          "magic_bonus": 235
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3013,
+        "physical_atk": 135,
+        "magic_atk": 135,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 5423,
+        "physical_atk": 205,
+        "magic_atk": 205,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 10303,
+        "physical_atk": 305,
+        "magic_atk": 305,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Angela",
+    "cost": 2,
+    "faction": "Faeborn",
+    "role": ["Mage"],
+    "skill": {
+      "name": "Puppet-on-a-String",
+      "description": "Angela launches a string that connects to the target, reducing their Hybrid DEF (up to 36). If still connected after 0.8s, deals (+900% Total Magic ATK) Magic DMG.",
+      "scaling": {
+        "star_1": {
+          "def_reduction": 36,
+          "magic_bonus": 900
+        },
+        "star_2": {
+          "def_reduction": 60,
+          "magic_bonus": 900
+        },
+        "star_3": {
+          "def_reduction": 84,
+          "magic_bonus": 1000
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1705,
+        "physical_atk": 90,
+        "magic_atk": 90,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3069,
+        "physical_atk": 135,
+        "magic_atk": 135,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 5524,
+        "physical_atk": 205,
+        "magic_atk": 205,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  },
+  {
+    "name": "Yu Zhong",
+    "cost": 5,
+    "faction": "Exorcist",
+    "role": ["Bruiser"],
+    "skill": {
+      "name": "Black Dragon Form",
+      "description": "Yu Zhong transforms into his Black Dragon Form for up to 5s, gaining 50% DMG Reduction and dealing (+220% Total Physical ATK) Physical DMG while rampaging through enemy Heroes. Gains 25% ATK Speed until the end of battle, and subsequent skills slash enemies within 2 tiles, dealing (+150 % Total Physical ATK) Physical DMG. (Both rampage and slash DMG count as Basic ATK DMG.)",
+      "scaling": {
+        "star_1": {
+          "atk_speed_bonus": 25,
+          "physical_bonus_rampage": 220,
+          "physical_bonus_slash": 150
+        },
+        "star_2": {
+          "atk_speed_bonus": 40,
+          "physical_bonus_rampage": 240,
+          "physical_bonus_slash": 165
+        },
+        "star_3": {
+          "atk_speed_bonus": 60,
+          "physical_bonus_rampage": 760,
+          "physical_bonus_slash": 600
+        }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 4519,
+        "physical_atk": 230,
+        "magic_atk": 230,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 8134,
+        "physical_atk": 345,
+        "magic_atk": 345,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 24853,
+        "physical_atk": 520,
+        "magic_atk": 520,
+        "atk_speed": 0.65,
+        "atk_range": 1,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Hayabusa",
+    "cost": 4,
+    "faction": "Exorcist",
+    "role": ["Swordsman"],
+    "skill": {
+      "name": "Ougi: Shadow Kill",
+      "description": "Hayabusa turns into a shadow and strikes enemies in range, dealing a total of (+945 % Total Physical ATK) Physical DMG over several hits.",
+      "scaling": {
+        "star_1": { "hits": 3, "physical_bonus": 945 },
+        "star_2": { "hits": 5, "physical_bonus": 965 },
+        "star_3": { "hits": 7, "physical_bonus": 2660 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 3321,
+        "physical_atk": 160,
+        "magic_atk": 170,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_2": {
+        "hp": 5978,
+        "physical_atk": 240,
+        "magic_atk": 255,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      },
+      "star_3": {
+        "hp": 12288,
+        "physical_atk": 360,
+        "magic_atk": 385,
+        "atk_speed": 0.75,
+        "atk_range": 1,
+        "initial_mana": 75,
+        "mana_cap": 100
+      }
+    }
+  },
+  {
+    "name": "Granger",
+    "cost": 2,
+    "faction": "Exorcist",
+    "role": ["Marksman"],
+    "skill": {
+      "name": "Rhapsody",
+      "description": "Granger rapidly fires 3 shots at the target, each dealing (+180 % Total Physical ATK) Physical DMG.",
+      "scaling": {
+        "star_1": { "physical_bonus": 180 },
+        "star_2": { "physical_bonus": 180 },
+        "star_3": { "physical_bonus": 240 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 1705,
+        "physical_atk": 110,
+        "magic_atk": 110,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_2": {
+        "hp": 3069,
+        "physical_atk": 165,
+        "magic_atk": 165,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      },
+      "star_3": {
+        "hp": 5524,
+        "physical_atk": 250,
+        "magic_atk": 250,
+        "atk_speed": 0.8,
+        "atk_range": 4,
+        "initial_mana": 25,
+        "mana_cap": 50
+      }
+    }
+  },
+  {
+    "name": "Kagura",
+    "cost": 3,
+    "faction": "Exorcist",
+    "role": ["Mage"],
+    "skill": {
+      "name": "Seimei Umbrella Open",
+      "description": "Kagura unleashes 3 Seimei Umbrella(s), dealing (+550 % Total Magic ATK) Magic DMG to enemies in their path.",
+      "scaling": {
+        "star_1": { "magic_bonus": 550 },
+        "star_2": { "magic_bonus": 550 },
+        "star_3": { "magic_bonus": 720 }
+      }
+    },
+    "attributes": {
+      "star_1": {
+        "hp": 2170,
+        "physical_atk": 105,
+        "magic_atk": 105,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_2": {
+        "hp": 3906,
+        "physical_atk": 160,
+        "magic_atk": 160,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      },
+      "star_3": {
+        "hp": 7421,
+        "physical_atk": 235,
+        "magic_atk": 235,
+        "atk_speed": 0.75,
+        "atk_range": 4,
+        "initial_mana": 50,
+        "mana_cap": 75
+      }
+    }
+  }
+]
