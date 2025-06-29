@@ -6,6 +6,35 @@ import { Heroes, Hero } from "./Types";
 import { Equipments, Equipment } from "./Types";
 import { Synergies, Synergy } from "./Types";
 
+const synergyKeyMap: Record<string, keyof Synergynumber> = {
+  "Astro Power": "AstroPower",
+  "Bruiser": "Bruiser",
+  "Dauntless": "Dauntless",
+  "Dawnbringer": "Dawnbringer",
+  "Defender": "Defender",
+  "Doomsworn": "Doomsworn",
+  "Dragon Altar": "DragonAltar",
+  "Emberlord": "Emberlord",
+  "Eruditio": "Eruditio",
+  "Exorcist": "Exorcist",
+  "Faeborn": "Faeborn",
+  "Mage": "Mage",
+  "Marksman": "Marksman",
+  "Northern Vale": "NorthernVale",
+  "Shadeweaver": "Shadeweaver",
+  "Stargazer": "Stargazer",
+  "Summoner": "Summoner",
+  "Support": "Support",
+  "Swordsman": "Swordsman",
+  "Weapon Master": "WeaponMaster"
+};
+
+const prettySynergyName: Record<string, string> = {};
+
+Object.entries(synergyKeyMap).forEach(([spaced, key]) => {
+  prettySynergyName[key] = spaced;
+});
+
 interface Synergynumber {
   AstroPower: number;
   Bruiser: number;
@@ -77,10 +106,7 @@ function TeamBuilder() {
   );
 
   const handleOnClick = (hero: Heroes) => {
-    setDrag((prev) => {
-      return hero;
-    });
-    addHerotoTable(boxHero.findIndex((champ) => champ === null));
+    addHerotoTable(boxHero.findIndex((champ) => champ === null), hero);
   };
   const handleOnClickCard = (card: string) => {
     setCardSelected([...cardSelected, card]);
@@ -98,10 +124,10 @@ function TeamBuilder() {
     updated.splice(index, 1);
     setCommanderSelected(updated);
   };
-  const addHerotoTable = (index: number) => {
+  const addHerotoTable = (index: number, hero: Heroes) => {
     setBoxHero((prev) => {
       const updated = [...prev];
-      updated[index] = drag;
+      updated[index] = hero;
       return updated;
     });
   };
@@ -150,8 +176,9 @@ function TeamBuilder() {
         uniqueHeroes.add(hero.name);
         const synergies = hero.synergy.split(",").map((s) => s.trim());
         synergies.forEach((synergy) => {
-          if (synergy in newSynergyCount) {
-            newSynergyCount[synergy as keyof Synergynumber]++;
+          const mappedKey = synergyKeyMap[synergy];
+          if (mappedKey in newSynergyCount) {
+            newSynergyCount[mappedKey]++;
           }
         });
       }
@@ -183,12 +210,12 @@ function TeamBuilder() {
                         <div className="Synergyrow">
                           <img
                             className="Synergy"
-                            src={`./Images/Synergies/${key}.png`}
+                            src={`./Images/Synergies/${prettySynergyName[key as keyof Synergynumber]}.png`}
                             alt={key}
                           />
                           <td> </td>
                           <div key={key}>
-                            {key}: {value}
+                            {prettySynergyName[key as keyof Synergynumber] ?? key}: {value}
                           </div>
                         </div>
                       </>
@@ -217,7 +244,9 @@ function TeamBuilder() {
                           console.log(Index);
                         }}
                         onDrop={() => {
-                          addHerotoTable(index);
+                          if (drag) {
+                            addHerotoTable(index, drag);
+                          }
                         }}
                         onDragEnd={() => {
                           (Index !== index || Index == null) &&
@@ -350,7 +379,6 @@ function TeamBuilder() {
                       src={`./Images/Heroes/${Champ.name}.png`}
                       alt={Champ.name}
                       onClick={() => {
-                        setDrag(Champ);
                         handleOnClick(Champ);
                       }}
                       onDragStart={() => setDrag(Champ)}
