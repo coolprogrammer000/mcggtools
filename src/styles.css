@@ -228,7 +228,7 @@ body {
 }
 /* for TeamBuilderTable.tsx*/
 .SynergyWrapper {
-  min-width: 140px;
+  min-width: 180px;
   height: 200px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -344,13 +344,11 @@ body {
   position: relative;
 }
 
-
 .EquipmentinTable {
   width: 15px; /* Or any size that fits */
   cursor: pointer;
   bottom: -10px;
 }
-
 
 .EquipmentsWrapper {
   display: flex;
@@ -366,7 +364,6 @@ body {
   cursor: pointer;
 }
 
-
 .CommanderinTable {
   width: 45px;
   cursor: pointer;
@@ -375,7 +372,6 @@ body {
   width: 45px;
   cursor: pointer;
 }
-
 
 .AdditionalTableRowCard {
   height: 60px;

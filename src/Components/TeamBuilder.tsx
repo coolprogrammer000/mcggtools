@@ -6,16 +6,15 @@ import { Heroes, Hero } from "./Types";
 import { Equipments, Equipment } from "./Types";
 import { Synergies, Synergy } from "./Types";
 
-
 interface Synergynumber {
   [key: string]: number;
 }
-
 
 function TeamBuilder() {
   const [press, setPress] = useState("");
   const [drag, setDrag] = useState<Heroes | null>(null);
   const [Index, setIndex] = useState<number | null>(null);
+  const [hasDropped, setHasDropped] = useState(false);
   const [isHerofromGallery, setHerofromGallery] = useState(false);
   const [SwapHero, setSwapHero] = useState<Heroes | null>(null);
   const [draggedHeroEquipments, setDraggedHeroEquipments] = useState<
@@ -47,9 +46,8 @@ function TeamBuilder() {
     Summoner: 0,
     Support: 0,
     Swordsman: 0,
-    WeaponMaster: 0,
+    "Weapon Master": 0,
   });
-
 
   const [boxHero, setBoxHero] = useState<(Heroes | null)[]>(
     Array(21).fill(null)
@@ -98,8 +96,11 @@ function TeamBuilder() {
       return updated;
     });
 
-
-    if (drag && !heroEquipments[`${drag.name}-${index}`]) {
+    if (
+      drag &&
+      (!heroEquipments[`${drag.name}-${index}`] ||
+        (SwapHero === drag && !equipmentdrag))
+    ) {
       setHeroEquipments((prev) => ({
         ...prev,
         [`${drag.name}-${index}`]: draggedHeroEquipments || [],
@@ -108,6 +109,17 @@ function TeamBuilder() {
     setDraggedHeroEquipments(null);
   };
 
+  const removeEquipmentfromTable = (index: number) => {
+    const hero = boxHero[index];
+    if (hero !== null) {
+      setHeroEquipments((prev) => {
+        const updatedEquipments = { ...prev };
+        const heroKey = `${hero.name}-${index}`;
+        delete updatedEquipments[heroKey];
+        return updatedEquipments;
+      });
+    }
+  };
 
   const swapHeroinTable = (index: number) => {
     setBoxHero((prev) => {
@@ -120,33 +132,24 @@ function TeamBuilder() {
     setHeroEquipments((prev) => {
       const updatedEquipments = { ...prev };
 
-
       if (drag && SwapHero) {
         const swapHeroKey = `${SwapHero.name}-${Index}`;
-        if (updatedEquipments[swapHeroKey]) {
+        if (updatedEquipments[swapHeroKey] && SwapHero !== drag) {
           delete updatedEquipments[swapHeroKey];
         }
         const swapHeroKeyNew = `${SwapHero.name}-${index}`;
         updatedEquipments[swapHeroKeyNew] = swapDraggedHeroEquipments || [];
       }
 
-
       return updatedEquipments;
     });
     setSwapDraggedHeroEquipments(null);
   };
   const removeHerofromTable = (index: number) => {
-    const hero = boxHero[index];
+    console.log("removeHerofromTable called");
     const updated = [...boxHero];
     updated[index] = null;
-    if (hero !== null) {
-      setHeroEquipments((prev) => {
-        const updatedEquipments = { ...prev };
-        const heroKey = `${hero.name}-${index}`;
-        delete updatedEquipments[heroKey];
-        return updatedEquipments;
-      });
-    }
+    removeEquipmentfromTable(index);
     setBoxHero(updated);
   };
   const updateSynergyCount = () => {
@@ -171,9 +174,8 @@ function TeamBuilder() {
       Summoner: 0,
       Support: 0,
       Swordsman: 0,
-      WeaponMaster: 0,
+      "Weapon Master": 0,
     };
-
 
     boxHero.forEach((hero) => {
       if (hero && !uniqueHeroes.has(hero.name)) {
@@ -187,21 +189,17 @@ function TeamBuilder() {
       }
     });
 
-
     setSynergyNumber(newSynergyCount);
   };
   useEffect(() => {
     updateSynergyCount();
   }, [boxHero]);
 
-
   const handleOnDropEquipment = (heroIndex: number) => {
     if (equipmentdrag && drag) {
       setHeroEquipments((prev) => {
         const heroKey = `${drag.name}-${heroIndex}`;
         const updatedEquipments = prev[heroKey] ? [...prev[heroKey]] : [];
-
-
         if (updatedEquipments.length < 3) {
           updatedEquipments.push(equipmentdrag);
         }
@@ -212,7 +210,6 @@ function TeamBuilder() {
       });
     }
   };
-
 
   return (
     <>
@@ -262,18 +259,10 @@ function TeamBuilder() {
                     const index = rowIndex * 7 + lengthIndex;
                     const hero = boxHero[index];
 
-
                     return (
                       <td
                         key={lengthIndex}
                         className="Box"
-                        onDragStart={() => {
-                          setDrag(hero);
-                          hero &&
-                            setDraggedHeroEquipments(
-                              heroEquipments[`${hero.name}-${index}`] || []
-                            );
-                        }}
                         onDragOver={(e) => {
                           e.preventDefault();
                           setIndex(index);
@@ -282,55 +271,63 @@ function TeamBuilder() {
                             setSwapDraggedHeroEquipments(
                               heroEquipments[`${hero.name}-${index}`] || []
                             );
+                          equipmentdrag && setDrag(hero);
                         }}
                         onDrop={() => {
                           isHerofromGallery && removeHerofromTable(index);
                           drag && addHerotoTable(index);
-                          console.log(heroEquipments);
                           handleOnDropEquipment(index);
+                          setHasDropped(true);
                         }}
                         onDragEnd={() => {
-                          (Index !== index || Index == null) &&
+                          (Index !== index || Index !== null) &&
+                            hasDropped &&
+                            SwapHero !== drag &&
                             removeHerofromTable(index);
-                          Index !== index &&
+                          hasDropped &&
+                            Index !== index &&
                             Index !== null &&
                             swapHeroinTable(index);
+                          setDraggedHeroEquipments(null);
                           setIndex(null);
                           setDrag(null);
+                          setHasDropped(false);
                         }}
                       >
                         {hero && (
                           <>
-                          <div className="imageContainer">
-                            <img
-                              className="HeroesinTable"
-                              src={`./Images/Heroes/${hero.name}.png`}
-                              alt={hero.name}
-                              onClick={() => {
-                                removeHerofromTable(index);
-                              }}
-                              onDragOver={(e) => {
-                                e.preventDefault();
-                                equipmentdrag && setDrag(hero);
-                              }}
-                            />
+                            <div className="imageContainer">
+                              <img
+                                className="HeroesinTable"
+                                src={`./Images/Heroes/${hero.name}.png`}
+                                alt={hero.name}
+                                onDragStart={() => {
+                                  setDrag(hero);
+                                  hero &&
+                                    setDraggedHeroEquipments(
+                                      heroEquipments[`${hero.name}-${index}`] ||
+                                        []
+                                    );
+                                }}
+                                onClick={() => {
+                                  removeHerofromTable(index);
+                                }}
+                              />
 
-
-                            <div className="EquipmentsWrapper">
-                              {heroEquipments[`${hero.name}-${index}`]?.map(
-                                (equipment, index) => (
-                                  <img
-                                    key={index}
-                                    className="EquipmentinTable"
-                                    src={`./Images/Equipments/${equipment.name}.png`}
-                                    alt={equipment.name}
-                                  />
-                                )
-                              )}
-                            </div>
+                              <div className="EquipmentsWrapper">
+                                {heroEquipments[`${hero.name}-${index}`]?.map(
+                                  (equipment, index) => (
+                                    <img
+                                      key={index}
+                                      className="EquipmentinTable"
+                                      src={`./Images/Equipments/${equipment.name}.png`}
+                                      alt={equipment.name}
+                                    />
+                                  )
+                                )}
+                              </div>
                             </div>
                           </>
-                         
                         )}
                       </td>
                     );
@@ -441,6 +438,12 @@ function TeamBuilder() {
                     ? setSynergySelected("A")
                     : setSynergySelected(Synergy.name);
                 }}
+                style={{
+                  opacity:
+                    synergySelected === "A" || synergySelected === Synergy.name
+                      ? 1
+                      : 0.2,
+                }}
               />
             ))}
           </div>
@@ -512,7 +515,8 @@ function TeamBuilder() {
                       className="Equipment"
                       src={`./Images/Equipments/${equipment.name}.png`}
                       alt={equipment.name}
-                      onDragStart={() => setEquipmentDrag(equipment)}
+                      onMouseEnter={() => setEquipmentDrag(equipment)}
+                      onMouseLeave={() => setEquipmentDrag(null)}
                       onDragEnd={() => setEquipmentDrag(null)}
                     />
                   </div>
