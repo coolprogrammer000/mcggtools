@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mcggtools/static/css/main.f31d5b2c.css",
-    "main.js": "/mcggtools/static/js/main.b04dacd7.js",
-    "index.html": "/mcggtools/index.html",
-    "main.f31d5b2c.css.map": "/mcggtools/static/css/main.f31d5b2c.css.map",
-    "main.b04dacd7.js.map": "/mcggtools/static/js/main.b04dacd7.js.map"
+    "main.css": "/coolprogrammer000.github.io/mcggtools/static/css/main.b77ccfe0.css",
+    "main.js": "/coolprogrammer000.github.io/mcggtools/static/js/main.1d6e0419.js",
+    "index.html": "/coolprogrammer000.github.io/mcggtools/index.html",
+    "main.b77ccfe0.css.map": "/coolprogrammer000.github.io/mcggtools/static/css/main.b77ccfe0.css.map",
+    "main.1d6e0419.js.map": "/coolprogrammer000.github.io/mcggtools/static/js/main.1d6e0419.js.map"
   },
   "entrypoints": [
-    "static/css/main.f31d5b2c.css",
-    "static/js/main.b04dacd7.js"
+    "static/css/main.b77ccfe0.css",
+    "static/js/main.1d6e0419.js"
   ]
 }
