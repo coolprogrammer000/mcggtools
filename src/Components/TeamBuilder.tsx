@@ -146,7 +146,6 @@ function TeamBuilder() {
     setSwapDraggedHeroEquipments(null);
   };
   const removeHerofromTable = (index: number) => {
-    console.log("removeHerofromTable called");
     const updated = [...boxHero];
     updated[index] = null;
     removeEquipmentfromTable(index);
@@ -288,6 +287,7 @@ function TeamBuilder() {
                             Index !== index &&
                             Index !== null &&
                             swapHeroinTable(index);
+                          Index == null && removeHerofromTable(index);
                           setDraggedHeroEquipments(null);
                           setIndex(null);
                           setDrag(null);
