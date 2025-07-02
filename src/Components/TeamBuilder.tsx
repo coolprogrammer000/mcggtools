@@ -624,8 +624,8 @@ function TeamBuilder() {
           </div>
         </div>
       )}
-      <div className="WholeBox">
-        <div className="HeroBox " onDragOver={() => setIndex(null)}>
+      <div className="WholeBox" onDragOver={() => setIndex(null)}>
+        <div className="HeroBox ">
           <div>
             <input
               type="text"
