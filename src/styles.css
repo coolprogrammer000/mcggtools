@@ -223,12 +223,12 @@ body {
 }
 /* for TeamBuilderTable.tsx*/
 .SynergyTable {
-  min-width: 180px;
+  min-width: 220px;
   text-align: center;
 }
 /* for TeamBuilderTable.tsx*/
 .SynergyWrapper {
-  min-width: 180px;
+  min-width: 220px;
   height: 200px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -240,6 +240,21 @@ body {
   margin-bottom: 4px;
   margin-top: 1px;
   margin-left: 5px;
+}
+.SynergyInfoLine {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.SynergyBreakpoints {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.active-breakpoint {
+  font-weight: bold;
+  color: #ffd700;
 }
 
 /* for TeamBuilderTable.tsx*/
@@ -268,6 +283,7 @@ body {
 .AdditionalTableRow {
   text-align: center;
 }
+
 /* for TeamBuilderTable.tsx*/
 .Fullpage {
   position: absolute; /* Relative to the body or parent container */
@@ -348,6 +364,15 @@ body {
   width: 15px; /* Or any size that fits */
   cursor: pointer;
   bottom: -10px;
+}
+
+.MagicEquipmentsWrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 60px;
+  height: 15px;
+  bottom: 38px;
 }
 
 .EquipmentsWrapper {
