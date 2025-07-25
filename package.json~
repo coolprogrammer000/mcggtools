@@ -1,9 +1,4 @@
 {
-<<<<<<< Updated upstream
-  
-=======
-  "homepage": "https://coolprogrammer000.github.io/mcggtools",
->>>>>>> Stashed changes
   "name": "react-typescript",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
@@ -14,12 +9,8 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "gh-pages": "^6.3.0",
-    "jsonwebtoken": "^9.0.2",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -39,13 +30,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "concurrently -k \"npm run --prefix server dev\" \"react-scripts start\"",
-    "build": "react-scripts build && npm --prefix server build"
+    "build": "react-scripts build && npm run --prefix server build",
+    "dev_build": "react-scripts build && serve -s build"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "type": "module"
+  ]
 }
