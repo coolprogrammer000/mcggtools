@@ -383,3 +383,63 @@ export const Synergy: Synergies[] = [
   { name: "Swordsman", breakpoints: [2, 4, 6] },
   { name: "Weapon Master", breakpoints: [2, 4, 6] },
 ];
+
+export type DetailedHero = {
+    id: string;
+    name: string;
+    description: string;
+    imageUrl: string;
+    cost: number;
+    faction: string;
+    role: string[];
+    skill: {
+        name: string;
+        description: string;
+        scaling: {
+            star_1: {
+                physical_bonus: number;
+                passive_bonus: number;
+                restore_bonus: number;
+            };
+            star_2: {
+                physical_bonus: number;
+                passive_bonus: number;
+                restore_bonus: number;
+            };
+            star_3: {
+                physical_bonus: number;
+                passive_bonus: number;
+                restore_bonus: number;
+            };
+        };
+    };
+    attributes: {
+        star_1: {
+            hp: number;
+            physical_atk: number;
+            magic_atk: number;
+            atk_speed: number;
+            atk_range: number;
+            initial_mana: number;
+            mana_cap: number;
+        };
+        star_2: {
+            hp: number;
+            physical_atk: number;
+            magic_atk: number;
+            atk_speed: number;
+            atk_range: number;
+            initial_mana: number;
+            mana_cap: number;
+        };
+        star_3: {
+            hp: number;
+            physical_atk: number;
+            magic_atk: number;
+            atk_speed: number;
+            atk_range: number;
+            initial_mana: number;
+            mana_cap: number;
+        };
+    };
+};

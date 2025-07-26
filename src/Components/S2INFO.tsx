@@ -1,7 +1,7 @@
 import "../styles.css";
 import { useState } from "react";
-import Heroes from "./S2/Heroes";
-//import Synergies from "./S2/Synergies";
+import HeroGrid from "./S2/HeroGrid";
+import SynergyGrid from "./S2/SynergyGrid";
 function Tables(){
   const [type, setType] = useState("heroes");
   return (
@@ -19,8 +19,8 @@ function Tables(){
         ))}
       </div>
       <div>
-        {type === "Heroes" && <Heroes />}
-        {/* {type === "Synergies" && <Synergies />} */}
+        {type === "Heroes" && <HeroGrid />}
+        {type === "Synergies" && <SynergyGrid />}
       </div>
     </>
   );

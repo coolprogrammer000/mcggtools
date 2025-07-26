@@ -2,7 +2,7 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 /*for the entire app*/
@@ -12,6 +12,7 @@ body {
 }
 /* for TopRow.tsx */
 .Row {
+  font-weight: bold;
   white-space: nowrap;
 }
 /* for TopRow.tsx */
@@ -403,4 +404,135 @@ body {
 }
 .AdditionalTableRowCommander {
   height: 45px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-card {
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  max-width: 280px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.hero-tags span {
+  margin-right: 6px;
+  font-size: 12px;
+  background-color: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.hero-skill {
+  font-size: 12px;
+  margin-top: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.hero-skill p {
+  margin: 4px 0;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.scaling-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hero-scaling li {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.synergy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.synergy-card {
+  background-color: #1e1e2f;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+  max-width: 280px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.synergy-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.synergy-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.synergy-description {
+  font-size: 12px;
+  margin-top: 8px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.tier-effect {
+  font-size: 12px;
+  margin-top: 4px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.synergy-heroes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.synergy-hero-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
+  border: 1px solid #aaa;
 }
