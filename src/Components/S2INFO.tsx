@@ -1,8 +1,28 @@
 import "../styles.css";
 import { useState } from "react";
-
-function S2Info() {
-  return <h1>Coming soon</h1>;
+import Heroes from "./S2/Heroes";
+//import Synergies from "./S2/Synergies";
+function Tables(){
+  const [type, setType] = useState("heroes");
+  return (
+    <>
+      <div className="SubRow">
+        {["Heroes", "Synergies"].map((text) => (
+          <span
+            key={text}
+            onClick={() => {
+              setType(text);
+            }}
+          >
+            {text}
+          </span>
+        ))}
+      </div>
+      <div>
+        {type === "Heroes" && <Heroes />}
+        {/* {type === "Synergies" && <Synergies />} */}
+      </div>
+    </>
+  );
 }
-
-export default S2Info;
+export default Tables

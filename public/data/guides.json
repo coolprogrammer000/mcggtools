@@ -1,20 +1,20 @@
 [
-  {
-    "id": "guide-1",
-    "title": "6 Emberlord Kaja Gord",
-    "author": "bllade",
-    "thumbnailUrl": "/Images/Synergies/Emberlord.png",
-    "description": "Emberlord Kaja Gord",
-    "link": "emberlord"
-  },
-  {
-    "id": "guide-2",
-    "title": "6 Swordsman",
-    "author": "bllade",
-    "thumbnailUrl": "/Images/Heroes/Ling.png",
-    "description": "6 Swordsman",
-    "link": "swordsman"
-  },
+    {
+        "id": "guide-1",
+        "title": "6 Emberlord Kaja Gord",
+        "author": "bllade",
+        "thumbnailUrl": "/Images/Synergies/Emberlord.png",
+        "description": "Emberlord Kaja Gord",
+        "link": "emberlord"
+    },
+    {
+        "id": "guide-2",
+        "title": "6 Swordsman",
+        "author": "bllade",
+        "thumbnailUrl": "/Images/Heroes/Ling.png",
+        "description": "6 Swordsman",
+        "link": "swordsman"
+    },
     {
         "id": "guide-3",
         "title": "6 Weapon Master 4 Marksman",

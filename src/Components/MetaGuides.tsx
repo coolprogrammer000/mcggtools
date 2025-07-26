@@ -55,7 +55,7 @@ function MetaGuides() {
                         {row.map((guide) => (
                             <a
                                 key={guide.id}
-                                href={guide.link}
+                                href={`/guides/${guide.id}`}
                                 className="guide-link"
                                 style={{
                                     flex: 1,
