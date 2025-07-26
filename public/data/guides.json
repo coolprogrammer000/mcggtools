@@ -1,0 +1,74 @@
+[
+    {
+        "id": "guide-1",
+        "title": "6 Emberlord Kaja Gord",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Synergies/Emberlord.png",
+        "description": "Emberlord Kaja Gord",
+        "link": "emberlord"
+    },
+    {
+        "id": "guide-2",
+        "title": "6 Swordsman",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Heroes/Ling.png",
+        "description": "6 Swordsman",
+        "link": "swordsman"
+    },
+    {
+        "id": "guide-3",
+        "title": "6 Weapon Master 4 Marksman",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Heroes/Moskov.png",
+        "description": "6 Weapon Master 4 Marksman",
+        "link": "6wm4m"
+    },
+    {
+        "id": "guide-4",
+        "title": "Eruditio Cashout",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Synergies/Eruditio.png",
+        "description": "Eruditio Cashout",
+        "link": "eruditio"
+    },
+    {
+        "id": "guide-5",
+        "title": "Dauntless Wanwan",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Heroes/Wanwan.png",
+        "description": "Dauntless Wanwan",
+        "link": "wanwan"
+    },
+    {
+        "id": "guide-6",
+        "title": "Dawnbringers",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Synergies/Dawnbringer.png",
+        "description": "Dawnbringers",
+        "link": "dawnbringer"
+    },
+    {
+        "id": "guide-7",
+        "title": "Doomsworn",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Synergies/Doomsworn.png",
+        "description": "Doomsworn",
+        "link": "doomsworn"
+    },
+    {
+        "id": "guide-8",
+        "title": "Guinevere",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Heroes/Guinevere.png",
+        "description": "Guinevere 1v9",
+        "link": "guinevere"
+    },
+    {
+        "id": "guide-9",
+        "title": "Odette Kagura",
+        "author": "bllade",
+        "thumbnailUrl": "./Images/Synergies/Mage.png",
+        "description": "6 Mage Odette Kagura",
+        "link": "6mage"
+    }
+]
