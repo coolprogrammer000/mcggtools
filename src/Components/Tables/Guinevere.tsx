@@ -41,7 +41,7 @@ function Guinevere() {
   const [guinevereData, setGuinevereData] = useState<GuinevereEntry[]>([]);
 
   useEffect(() => {
-    fetch("/data/level intervals.json")
+    fetch("./data/level intervals.json")
       .then((res) => res.json())
       .then((jsonData) => {
         const processed: GuinevereEntry[] = Object.entries(jsonData).map(([level, data]: [string, any]) => ({

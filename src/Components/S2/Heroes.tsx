@@ -71,7 +71,7 @@ const Heroes: React.FC = () => {
     const [heroes, setHeroes] = useState<Hero[]>([]);
 
     useEffect(() => {
-        fetch("/data/heroes.json")
+        fetch("./data/heroes.json")
             .then((res) => res.json())
             .then((data) => setHeroes(data))
             .catch((err) => console.error("Failed to load heroes:", err));

@@ -41,7 +41,7 @@ function Levelling() {
   >([]);
 
   useEffect(() => {
-    fetch("/data/level intervals.json")
+    fetch("./data/level intervals.json")
       .then((res) => res.json())
       .then((jsonData) => {
         const processed = Object.entries(jsonData).map(([level, data]: [string, any]) => ({

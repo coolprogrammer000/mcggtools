@@ -28,7 +28,7 @@ function MetaGuides() {
             try {
                 setLoading(true);
                 // Replace with your actual JSON file path
-                const response = await fetch("/data/guides.json");
+                const response = await fetch("./data/guides.json");
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const data: Guide[] = await response.json();
                 setGuides(data);
@@ -55,7 +55,7 @@ function MetaGuides() {
                         {row.map((guide) => (
                             <a
                                 key={guide.id}
-                                href={`/guides/${guide.id}`}
+                                href={`./guides/${guide.id}`}
                                 className="guide-link"
                                 style={{
                                     flex: 1,

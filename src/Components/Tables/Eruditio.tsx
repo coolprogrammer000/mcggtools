@@ -38,17 +38,17 @@ const renderRewards = (rewards: Record<string, any>) => (
           <li key={reward}>
             {reward === "Gold" ? (
               <div className="item-container">
-                <img src="/images/Icons/Gold.png" alt="Gold" className="item" />
+                <img src="./Images/Icons/Gold.png" alt="Gold" className="item" />
                 <span className="item-amount">{val}</span>
               </div>
             ) : reward === "XP" ? (
               <div className="item-container">
-                <img src="/images/Icons/XP.png" alt="XP" className="item" />
+                <img src="./Images/Icons/XP.png" alt="XP" className="item" />
                 <span className="item-amount">{val}</span>
               </div>
             ) : reward === "Equipment" ? (
               <div className="item-container">
-                <img src="/images/Equipments/BladeofDespair.png" alt="Equipment" className="item" />
+                <img src="./Images/Equipments/BladeofDespair.png" alt="Equipment" className="item" />
                 <span className="item-amount">{val}</span>
               </div>
             ) : (
@@ -101,7 +101,7 @@ function Eruditio() {
   const [lootData, setLootData] = useState(null);
 
   useEffect(() => {
-    fetch('/data/eruditio cashout.json')
+    fetch('./data/eruditio cashout.json')
       .then(r => r.json())
       .then(setLootData);
   }, []);
