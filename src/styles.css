@@ -21,6 +21,13 @@ body {
   margin-right: 20px;
   cursor: pointer;
 }
+
+.active-tab {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  color: #ffd700; /* highlight color */
+}
+
 /* for TierList.tsx */
 .SubRow {
   margin-top: 45px;

@@ -10,21 +10,22 @@ import MetaGuides from "./MetaGuides";
 export default function TopRow() {
   const [page, setPage] = useState("default");
 
+  const tabs = [
+    "Meta Guides",
+    "Team Builder",
+    "Tier List",
+    "Tables",
+    "Patch Notes",
+    "S2 Info",
+  ];
+
   return (
     <div className="Row">
-      {[
-        "Meta Guides",
-        "Team Builder",
-        "Tier List",
-        "Tables",
-        "Patch Notes",
-        "S2 Info",
-      ].map((text) => (
+      {tabs.map((text) => (
         <span
           key={text}
-          onClick={() => {
-            setPage(text);
-          }}
+          className={page === text ? "active-tab" : ""}
+          onClick={() => setPage(text)}
         >
           {text}
         </span>
