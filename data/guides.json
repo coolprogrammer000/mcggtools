@@ -5,7 +5,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Emberlord.png",
         "description": "Emberlord Kaja Gord",
-        "link": "emberlord"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-2",
@@ -13,15 +70,129 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Ling.png",
         "description": "6 Swordsman",
-        "link": "swordsman"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-3",
-        "title": "6 Weapon Master 4 Marksman",
+        "title": "Weapon Marksman",
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Moskov.png",
-        "description": "6 Weapon Master 4 Marksman",
-        "link": "6wm4m"
+        "description": "Weapon Marksman",
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-4",
@@ -29,7 +200,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Eruditio.png",
         "description": "Eruditio Cashout",
-        "link": "eruditio"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-5",
@@ -37,7 +265,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Wanwan.png",
         "description": "Dauntless Wanwan",
-        "link": "wanwan"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-6",
@@ -45,7 +330,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Dawnbringer.png",
         "description": "Dawnbringers",
-        "link": "dawnbringer"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-7",
@@ -53,7 +395,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Doomsworn.png",
         "description": "Doomsworn",
-        "link": "doomsworn"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-8",
@@ -61,7 +460,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Guinevere.png",
         "description": "Guinevere 1v9",
-        "link": "guinevere"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-9",
@@ -69,6 +525,63 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Mage.png",
         "description": "6 Mage Odette Kagura",
-        "link": "6mage"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "test",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Flexible Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Flexible Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     }
 ]
