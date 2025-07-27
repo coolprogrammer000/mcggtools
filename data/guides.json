@@ -34,7 +34,7 @@
                 null
             ]
         ],
-        "text": "test",
+        "text": "Play strongest board early game and push to level 9 as soon as possible. Sacrifice your Emberlord units to further buff your Gord and Kaja. Chase for 3 stars to win out.",
         "go_go_cards": [],
         "commanders": [
             "Chou",
@@ -99,7 +99,7 @@
                 null
             ]
         ],
-        "text": "test",
+        "text": "Prioritise items on these heroes in this order: Ling, Hayabusa, Nolan. War Axe can be replaced if you have a lifesteal go go card. Position Shadeweaver units to catch opponent's carries.",
         "go_go_cards": [],
         "commanders": [
             "Chou",
@@ -173,7 +173,7 @@
                 null
             ]
         ],
-        "text": "test",
+        "text": "Moskov is capable of 1v9 when 2 starred with correct items. Look to get 3 star Irithel and Argus to win out.",
         "go_go_cards": [],
         "commanders": [
             "Chou",
@@ -207,7 +207,7 @@
                 "label": "Items",
                 "items": [
                     "GoldenStaff",
-                    "BerserkersFury",
+                    "Berserker'sFury",
                     "Haas'Claws",
                     "Immortality",
                     "WinterCrown"
@@ -221,7 +221,7 @@
                     "WinterCrown",
                     "DemonHunterSword",
                     "BladeofDespair",
-                    "BerserkersFury",
+                    "Berserker'sFury",
                     "Haas'Claws"
                 ]
             }
@@ -262,14 +262,14 @@
                 null
             ]
         ],
-        "text": "test",
+        "text": "Playable with 4 Eruditio early game. 50 Cashout is enough to go 1st place with the amount of resources you get. Can pivot to other comps as well with the gold.",
         "go_go_cards": [],
         "commanders": [
             "Nana"
         ],
         "itemRecommendations": [
             {
-                "hero": "Nolan",
+                "hero": "Natan",
                 "label": "Items",
                 "items": [
                     "KnowledgeCrystal",
@@ -298,12 +298,12 @@
         "description": "Dauntless Wanwan",
         "board": [
             [
-                "Balmond",
                 "Esmeralda",
-                "Kaja",
-                "Badang",
-                "Guinevere",
-                "Thamuz",
+                "Balmond",
+                "Lolita",
+                "Franco",
+                "Akai",
+                "Uranus",
                 null
             ],
             [
@@ -316,41 +316,49 @@
                 null
             ],
             [
-                "Angela",
+                "Wanwan",
+                "Layla",
                 "Moskov",
-                "Gord",
-                null,
+                "Irithel",
                 null,
                 null,
                 null
             ]
         ],
-        "text": "test",
+        "text": "Roll on level 4 for 3 star Wanwan and Lolita. Go for 3 star Akai if possible. Wanwan really wants Golden Staff. If playing Aamon, you can go for 3 star 4/5 costs with the 3 mirror devices.",
         "go_go_cards": [],
         "commanders": [
-            "Chou",
-            "Guinevere",
-            "Popol & Kupa",
-            "Wanwan",
-            "Nana"
+            "Aamon",
+            "Vale",
+            "Miya"
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Wanwan",
+                "label": "Items",
                 "items": [
-                    "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "GoldenStaff",
+                    "Berserker'sFury",
+                    "Haas'Claws",
+                    "BladeofDespair",
+                    "DemonHunterSword"
                 ]
             },
             {
-                "hero": "Gord",
-                "label": "Flexible Items",
+                "hero": "Lolita",
+                "label": "Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
-                    "WinterCrown"
+                    "BladeArmor",
+                    "DominanceIce",
+                    "GuardianHelmet",
+                    "AntiqueCuirass"
+                ]
+            },
+            {
+                "hero": "Akai",
+                "label": "Items",
+                "items": [
+                    "Oracle"
                 ]
             }
         ]
@@ -363,12 +371,12 @@
         "description": "Dawnbringers",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
-                "Kaja",
-                "Badang",
+                "Aldous",
                 "Guinevere",
-                "Thamuz",
+                "Kaja",
+                "Terizla",
+                "Uranus",
+                "Esmeralda",
                 null
             ],
             [
@@ -382,15 +390,15 @@
             ],
             [
                 "Angela",
-                "Moskov",
-                "Gord",
+                "Vale",
+                "Vexana",
                 null,
                 null,
                 null,
                 null
             ]
         ],
-        "text": "test",
+        "text": "Blessing on Vexana for 2 Summoner and extra damage. Go for as many 3 star 4 costs as you can.",
         "go_go_cards": [],
         "commanders": [
             "Chou",
@@ -401,21 +409,21 @@
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
+                "hero": "Terizla",
                 "label": "Flexible Items",
                 "items": [
-                    "Immortality",
+                    "DominanceIce",
                     "AntiqueCuirass",
                     "GuardianHelmet"
                 ]
             },
             {
-                "hero": "Gord",
+                "hero": "Vexana",
                 "label": "Flexible Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
-                    "WinterCrown"
+                    "HornofProsperity",
+                    "SkywrathSpear",
+                    "Direwolf'sDevastator"
                 ]
             }
         ]
@@ -428,34 +436,34 @@
         "description": "Doomsworn",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
-                "Kaja",
-                "Badang",
-                "Guinevere",
-                "Thamuz",
-                null
-            ],
-            [
-                null,
-                null,
-                null,
-                null,
-                null,
+                "Argus",
+                "Dyrroth",
+                "Franco",
+                "Hylos",
+                "Alpha",
                 null,
                 null
             ],
             [
-                "Angela",
-                "Moskov",
-                "Gord",
+                "Clint",
+                "Luo Yi",
+                "Helcurt",
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Irithel",
+                "Cyclops",
+                null,
                 null,
                 null,
                 null,
                 null
             ]
         ],
-        "text": "test",
+        "text": "Itemise Hanabi if you have good items for her. Can chase 3 star Irithel and Argus to go 1st place.",
         "go_go_cards": [],
         "commanders": [
             "Chou",
@@ -466,21 +474,24 @@
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Argus",
+                "label": "Items",
                 "items": [
-                    "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "Haas'Claws",
+                    "Berserker'sFury",
+                    "BladeofDespair",
+                    "Immortality"
                 ]
             },
             {
-                "hero": "Gord",
-                "label": "Flexible Items",
+                "hero": "Irithel",
+                "label": "Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
-                    "WinterCrown"
+                    "GoldenStaff",
+                    "DemonHunterSword",
+                    "BladeofDespair",
+                    "Berserker'sFury",
+                    "Haas'Claws"
                 ]
             }
         ]
@@ -493,12 +504,12 @@
         "description": "Guinevere 1v9",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
-                "Kaja",
-                "Badang",
                 "Guinevere",
-                "Thamuz",
+                "Badang",
+                "Yu Zhong",
+                "Masha",
+                "Dyrroth",
+                null,
                 null
             ],
             [
@@ -512,40 +523,50 @@
             ],
             [
                 "Angela",
-                "Moskov",
+                "Aurora",
                 "Gord",
-                null,
+                "Kagura",
                 null,
                 null,
                 null
             ]
         ],
-        "text": "test",
+        "text": "Guinevere can 1v9 with Kagura commander. Position her away from aggro so that she can scale with Golden Staff. 3 starred Guinevere can win 3 star 5 costs some times.",
         "go_go_cards": [],
         "commanders": [
-            "Chou",
-            "Guinevere",
-            "Popol & Kupa",
-            "Wanwan",
-            "Nana"
+            "Kagura"
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Guinevere",
+                "label": "Items",
                 "items": [
                     "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "WinterCrown",
+                    "GoldenStaff",
+                    "Purify"
+                ]
+            },
+            {
+                "hero": "Aurora",
+                "label": "Items",
+                "items": [
+                    "GlowingWand"
                 ]
             },
             {
                 "hero": "Gord",
-                "label": "Flexible Items",
+                "label": "Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
-                    "WinterCrown"
+                    "GlowingWand"
+                ]
+            },
+            {
+                "hero": "Yu Zhong",
+                "label": "Items",
+                "items": [
+                    "Exorcist'sSeal(Basic)",
+                    "Oracle"
                 ]
             }
         ]
@@ -558,12 +579,12 @@
         "description": "6 Mage Odette Kagura",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
+                null,
                 "Kaja",
-                "Badang",
                 "Guinevere",
-                "Thamuz",
+                "Esmeralda",
+                "Minotaur",
+                null,
                 null
             ],
             [
@@ -577,40 +598,42 @@
             ],
             [
                 "Angela",
-                "Moskov",
+                "Kagura",
                 "Gord",
-                null,
-                null,
+                "Odette",
+                "Aurora",
                 null,
                 null
             ]
         ],
-        "text": "test",
+        "text": "Roll on 7 for 3 star Odette and Kagura. Angela commander allows you to duo carry both Odette and Kagura.",
         "go_go_cards": [],
         "commanders": [
-            "Chou",
-            "Guinevere",
-            "Popol & Kupa",
-            "Wanwan",
-            "Nana"
+            "Angela",
+            "Zilong"
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Kagura",
+                "label": "Items",
                 "items": [
+                    "Exorcist'sSeal(Basic)",
+                    "GlowingWand",
+                    "WinterCrown",
                     "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "HolyCrystal",
+                    "GreatDragonSpear",
+                    "AstroPowerMagicCrystal"
                 ]
             },
             {
-                "hero": "Gord",
-                "label": "Flexible Items",
+                "hero": "Odette",
+                "label": "Items",
                 "items": [
                     "HolyCrystal",
                     "GlowingWand",
-                    "WinterCrown"
+                    "WinterCrown",
+                    "GreatDragonSpear"
                 ]
             }
         ]
