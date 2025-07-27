@@ -46,7 +46,7 @@
         "itemRecommendations": [
             {
                 "hero": "Kaja",
-                "label": "Flexible Items",
+                "label": "Items",
                 "items": [
                     "Immortality",
                     "AntiqueCuirass",
@@ -55,7 +55,7 @@
             },
             {
                 "hero": "Gord",
-                "label": "Flexible Items",
+                "label": "Items",
                 "items": [
                     "HolyCrystal",
                     "GlowingWand",
@@ -72,12 +72,12 @@
         "description": "6 Swordsman",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
-                "Kaja",
-                "Badang",
-                "Guinevere",
-                "Thamuz",
+                "Ling",
+                "Nolan",
+                "Hayabusa",
+                "Karina",
+                "Gusion",
+                "Alpha",
                 null
             ],
             [
@@ -90,9 +90,9 @@
                 null
             ],
             [
-                "Angela",
-                "Moskov",
-                "Gord",
+                "Helcurt",
+                "Luo Yi",
+                "Clint",
                 null,
                 null,
                 null,
@@ -110,21 +110,30 @@
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Ling",
+                "label": "Items",
                 "items": [
                     "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "WinterCrown",
+                    "WarAxe"
                 ]
             },
             {
-                "hero": "Gord",
-                "label": "Flexible Items",
+                "hero": "Hayabusa",
+                "label": "Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
-                    "WinterCrown"
+                    "Immortality",
+                    "WinterCrown",
+                    "WarAxe"
+                ]
+            },
+            {
+                "hero": "Nolan",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "WinterCrown",
+                    "WarAxe"
                 ]
             }
         ]
@@ -137,27 +146,27 @@
         "description": "Weapon Marksman",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
-                "Kaja",
-                "Badang",
-                "Guinevere",
+                "Alpha",
+                "Martis",
+                "Argus",
                 "Thamuz",
-                null
-            ],
-            [
-                null,
-                null,
-                null,
-                null,
-                null,
+                "Suyou",
                 null,
                 null
             ],
             [
-                "Angela",
+                null,
+                null,
+                "Clint",
+                null,
+                null,
+                null,
+                null
+            ],
+            [
                 "Moskov",
-                "Gord",
+                "Wanwan",
+                "Irithel",
                 null,
                 null,
                 null,
@@ -175,21 +184,45 @@
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Alpha",
+                "label": "Items",
                 "items": [
                     "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "WinterCrown"
                 ]
             },
             {
-                "hero": "Gord",
-                "label": "Flexible Items",
+                "hero": "Moskov",
+                "label": "Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
+                    "WarAxe",
+                    "GoldenStaff",
+                    "WinterCrown",
+                    "Immortality",
+                    "WeaponMasterMagicCrystal"
+                ]
+            },
+            {
+                "hero": "Argus",
+                "label": "Items",
+                "items": [
+                    "GoldenStaff",
+                    "BerserkersFury",
+                    "Haas'Claws",
+                    "Immortality",
                     "WinterCrown"
+                ]
+            },
+            {
+                "hero": "Irithel",
+                "label": "Items",
+                "items": [
+                    "GoldenStaff",
+                    "WinterCrown",
+                    "DemonHunterSword",
+                    "BladeofDespair",
+                    "BerserkersFury",
+                    "Haas'Claws"
                 ]
             }
         ]
@@ -202,29 +235,29 @@
         "description": "Eruditio Cashout",
         "board": [
             [
-                "Balmond",
-                "Esmeralda",
-                "Kaja",
-                "Badang",
-                "Guinevere",
-                "Thamuz",
-                null
-            ],
-            [
-                null,
-                null,
-                null,
-                null,
-                null,
+                "Ling",
+                "Minotaur",
+                "Lolita",
+                "Johnson",
+                "Nolan",
                 null,
                 null
             ],
             [
-                "Angela",
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Natan",
+                "Layla",
+                "Diggie",
                 "Moskov",
-                "Gord",
-                null,
-                null,
+                "Lunox",
                 null,
                 null
             ]
@@ -232,29 +265,27 @@
         "text": "test",
         "go_go_cards": [],
         "commanders": [
-            "Chou",
-            "Guinevere",
-            "Popol & Kupa",
-            "Wanwan",
             "Nana"
         ],
         "itemRecommendations": [
             {
-                "hero": "Kaja",
-                "label": "Flexible Items",
+                "hero": "Nolan",
+                "label": "Items",
                 "items": [
+                    "KnowledgeCrystal",
+                    "WinterCrown",
+                    "FeatherofHeaven",
                     "Immortality",
-                    "AntiqueCuirass",
-                    "GuardianHelmet"
+                    "AstroPowerMagicCrystal"
                 ]
             },
             {
-                "hero": "Gord",
-                "label": "Flexible Items",
+                "hero": "Minotaur",
+                "label": "Items",
                 "items": [
-                    "HolyCrystal",
-                    "GlowingWand",
-                    "WinterCrown"
+                    "AntiqueCuirass",
+                    "DominanceIce",
+                    "GuardianHelmet"
                 ]
             }
         ]
