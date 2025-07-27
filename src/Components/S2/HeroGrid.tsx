@@ -6,7 +6,7 @@ const HeroGrid: React.FC = () => {
   const [heroes, setHeroes] = useState<DetailedHero[]>([]);
 
   useEffect(() => {
-    fetch("/data/heroes.json")
+    fetch("./data/heroes.json")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch hero data.");
         return res.json();

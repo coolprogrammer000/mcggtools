@@ -1,6 +1,5 @@
 import "../styles.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import TeamBuilder from "./TeamBuilder";
 import TierList from "./TierList";
 import PatchNotes from "./PatchNotes";
@@ -10,7 +9,6 @@ import MetaGuides from "./MetaGuides";
 
 export default function TopRow() {
   const [page, setPage] = useState("default");
-  const navigate = useNavigate();
 
   return (
     <div className="Row">
@@ -26,7 +24,6 @@ export default function TopRow() {
           key={text}
           onClick={() => {
             setPage(text);
-            navigate("/"); // go to homepage
           }}
         >
           {text}

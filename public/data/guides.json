@@ -5,7 +5,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Emberlord.png",
         "description": "Emberlord Kaja Gord",
-        "link": "emberlord"
+        "board": [
+            [
+                "Balmond",
+                "Esmeralda",
+                "Kaja",
+                "Badang",
+                "Guinevere",
+                "Thamuz",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Moskov",
+                "Gord",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Play strongest board early game and push to level 9 as soon as possible. Sacrifice your Emberlord units to further buff your Gord and Kaja. Chase for 3 stars to win out.",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kaja",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-2",
@@ -13,15 +70,162 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Ling.png",
         "description": "6 Swordsman",
-        "link": "swordsman"
+        "board": [
+            [
+                "Ling",
+                "Nolan",
+                "Hayabusa",
+                "Karina",
+                "Gusion",
+                "Alpha",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Helcurt",
+                "Luo Yi",
+                "Clint",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Prioritise items on these heroes in this order: Ling, Hayabusa, Nolan. War Axe can be replaced if you have a lifesteal go go card. Position Shadeweaver units to catch opponent's carries.",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Ling",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "WinterCrown",
+                    "WarAxe"
+                ]
+            },
+            {
+                "hero": "Hayabusa",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "WinterCrown",
+                    "WarAxe"
+                ]
+            },
+            {
+                "hero": "Nolan",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "WinterCrown",
+                    "WarAxe"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-3",
-        "title": "6 Weapon Master 4 Marksman",
+        "title": "Weapon Marksman",
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Moskov.png",
-        "description": "6 Weapon Master 4 Marksman",
-        "link": "6wm4m"
+        "description": "Weapon Marksman",
+        "board": [
+            [
+                "Alpha",
+                "Martis",
+                "Argus",
+                "Thamuz",
+                "Suyou",
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                "Clint",
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Moskov",
+                "Wanwan",
+                "Irithel",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Moskov is capable of 1v9 when 2 starred with correct items. Look to get 3 star Irithel and Argus to win out.",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Alpha",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "WinterCrown"
+                ]
+            },
+            {
+                "hero": "Moskov",
+                "label": "Items",
+                "items": [
+                    "WarAxe",
+                    "GoldenStaff",
+                    "WinterCrown",
+                    "Immortality",
+                    "WeaponMasterMagicCrystal"
+                ]
+            },
+            {
+                "hero": "Argus",
+                "label": "Items",
+                "items": [
+                    "GoldenStaff",
+                    "Berserker'sFury",
+                    "Haas'Claws",
+                    "Immortality",
+                    "WinterCrown"
+                ]
+            },
+            {
+                "hero": "Irithel",
+                "label": "Items",
+                "items": [
+                    "GoldenStaff",
+                    "WinterCrown",
+                    "DemonHunterSword",
+                    "BladeofDespair",
+                    "Berserker'sFury",
+                    "Haas'Claws"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-4",
@@ -29,7 +233,62 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Eruditio.png",
         "description": "Eruditio Cashout",
-        "link": "eruditio"
+        "board": [
+            [
+                "Ling",
+                "Minotaur",
+                "Lolita",
+                "Johnson",
+                "Nolan",
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Natan",
+                "Layla",
+                "Diggie",
+                "Moskov",
+                "Lunox",
+                null,
+                null
+            ]
+        ],
+        "text": "Playable with 4 Eruditio early game. 50 Cashout is enough to go 1st place with the amount of resources you get. Can pivot to other comps as well with the gold.",
+        "go_go_cards": [],
+        "commanders": [
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Natan",
+                "label": "Items",
+                "items": [
+                    "KnowledgeCrystal",
+                    "WinterCrown",
+                    "FeatherofHeaven",
+                    "Immortality",
+                    "AstroPowerMagicCrystal"
+                ]
+            },
+            {
+                "hero": "Minotaur",
+                "label": "Items",
+                "items": [
+                    "AntiqueCuirass",
+                    "DominanceIce",
+                    "GuardianHelmet"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-5",
@@ -37,7 +296,72 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Wanwan.png",
         "description": "Dauntless Wanwan",
-        "link": "wanwan"
+        "board": [
+            [
+                "Esmeralda",
+                "Balmond",
+                "Lolita",
+                "Franco",
+                "Akai",
+                "Uranus",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Wanwan",
+                "Layla",
+                "Moskov",
+                "Irithel",
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Roll on level 4 for 3 star Wanwan and Lolita. Go for 3 star Akai if possible. Wanwan really wants Golden Staff. If playing Aamon, you can go for 3 star 4/5 costs with the 3 mirror devices.",
+        "go_go_cards": [],
+        "commanders": [
+            "Aamon",
+            "Vale",
+            "Miya"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Wanwan",
+                "label": "Items",
+                "items": [
+                    "GoldenStaff",
+                    "Berserker'sFury",
+                    "Haas'Claws",
+                    "BladeofDespair",
+                    "DemonHunterSword"
+                ]
+            },
+            {
+                "hero": "Lolita",
+                "label": "Items",
+                "items": [
+                    "BladeArmor",
+                    "DominanceIce",
+                    "GuardianHelmet",
+                    "AntiqueCuirass"
+                ]
+            },
+            {
+                "hero": "Akai",
+                "label": "Items",
+                "items": [
+                    "Oracle"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-6",
@@ -45,7 +369,64 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Dawnbringer.png",
         "description": "Dawnbringers",
-        "link": "dawnbringer"
+        "board": [
+            [
+                "Aldous",
+                "Guinevere",
+                "Kaja",
+                "Terizla",
+                "Uranus",
+                "Esmeralda",
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Vale",
+                "Vexana",
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Blessing on Vexana for 2 Summoner and extra damage. Go for as many 3 star 4 costs as you can.",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Terizla",
+                "label": "Flexible Items",
+                "items": [
+                    "DominanceIce",
+                    "AntiqueCuirass",
+                    "GuardianHelmet"
+                ]
+            },
+            {
+                "hero": "Vexana",
+                "label": "Flexible Items",
+                "items": [
+                    "HornofProsperity",
+                    "SkywrathSpear",
+                    "Direwolf'sDevastator"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-7",
@@ -53,7 +434,67 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Doomsworn.png",
         "description": "Doomsworn",
-        "link": "doomsworn"
+        "board": [
+            [
+                "Argus",
+                "Dyrroth",
+                "Franco",
+                "Hylos",
+                "Alpha",
+                null,
+                null
+            ],
+            [
+                "Clint",
+                "Luo Yi",
+                "Helcurt",
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Irithel",
+                "Cyclops",
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Itemise Hanabi if you have good items for her. Can chase 3 star Irithel and Argus to go 1st place.",
+        "go_go_cards": [],
+        "commanders": [
+            "Chou",
+            "Guinevere",
+            "Popol & Kupa",
+            "Wanwan",
+            "Nana"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Argus",
+                "label": "Items",
+                "items": [
+                    "Haas'Claws",
+                    "Berserker'sFury",
+                    "BladeofDespair",
+                    "Immortality"
+                ]
+            },
+            {
+                "hero": "Irithel",
+                "label": "Items",
+                "items": [
+                    "GoldenStaff",
+                    "DemonHunterSword",
+                    "BladeofDespair",
+                    "Berserker'sFury",
+                    "Haas'Claws"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-8",
@@ -61,7 +502,74 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Heroes/Guinevere.png",
         "description": "Guinevere 1v9",
-        "link": "guinevere"
+        "board": [
+            [
+                "Guinevere",
+                "Badang",
+                "Yu Zhong",
+                "Masha",
+                "Dyrroth",
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Aurora",
+                "Gord",
+                "Kagura",
+                null,
+                null,
+                null
+            ]
+        ],
+        "text": "Guinevere can 1v9 with Kagura commander. Position her away from aggro so that she can scale with Golden Staff. 3 starred Guinevere can win 3 star 5 costs some times.",
+        "go_go_cards": [],
+        "commanders": [
+            "Kagura"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Guinevere",
+                "label": "Items",
+                "items": [
+                    "Immortality",
+                    "WinterCrown",
+                    "GoldenStaff",
+                    "Purify"
+                ]
+            },
+            {
+                "hero": "Aurora",
+                "label": "Items",
+                "items": [
+                    "GlowingWand"
+                ]
+            },
+            {
+                "hero": "Gord",
+                "label": "Items",
+                "items": [
+                    "GlowingWand"
+                ]
+            },
+            {
+                "hero": "Yu Zhong",
+                "label": "Items",
+                "items": [
+                    "Exorcist'sSeal(Basic)",
+                    "Oracle"
+                ]
+            }
+        ]
     },
     {
         "id": "guide-9",
@@ -69,6 +577,65 @@
         "author": "bllade",
         "thumbnailUrl": "./Images/Synergies/Mage.png",
         "description": "6 Mage Odette Kagura",
-        "link": "6mage"
+        "board": [
+            [
+                null,
+                "Kaja",
+                "Guinevere",
+                "Esmeralda",
+                "Minotaur",
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                "Angela",
+                "Kagura",
+                "Gord",
+                "Odette",
+                "Aurora",
+                null,
+                null
+            ]
+        ],
+        "text": "Roll on 7 for 3 star Odette and Kagura. Angela commander allows you to duo carry both Odette and Kagura.",
+        "go_go_cards": [],
+        "commanders": [
+            "Angela",
+            "Zilong"
+        ],
+        "itemRecommendations": [
+            {
+                "hero": "Kagura",
+                "label": "Items",
+                "items": [
+                    "Exorcist'sSeal(Basic)",
+                    "GlowingWand",
+                    "WinterCrown",
+                    "Immortality",
+                    "HolyCrystal",
+                    "GreatDragonSpear",
+                    "AstroPowerMagicCrystal"
+                ]
+            },
+            {
+                "hero": "Odette",
+                "label": "Items",
+                "items": [
+                    "HolyCrystal",
+                    "GlowingWand",
+                    "WinterCrown",
+                    "GreatDragonSpear"
+                ]
+            }
+        ]
     }
 ]
